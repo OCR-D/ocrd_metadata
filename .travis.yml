@@ -16,7 +16,7 @@ branches:
   - jUnitTests
   
 script:
-- ./gradlew -Ptrravis clean check jacocoTestReport
+- ./gradlew -Ptravis clean check jacocoTestReport
 
 after_success:
 - "./gradlew coveralls"
