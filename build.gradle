@@ -1,0 +1,85 @@
+buildscript {
+    repositories { 
+        mavenLocal() 
+        mavenCentral()
+        jcenter()
+    }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE")
+  }
+}
+
+plugins { 
+  id "io.spring.dependency-management" version "1.0.4.RELEASE" 
+  id "com.github.kt3k.coveralls" version "2.8.1" 
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'jacoco'
+apply plugin: 'maven'
+
+description = 'Tools for extracting metadata from OCR-D bagIt container/workspace.'
+    group = 'edu.kit.ocrd'
+version = '0.1.0'
+
+jar {
+    baseName = 'ocrd-metadata'
+    version =  '0.1.0'
+}
+
+repositories { 
+    mavenLocal() 
+    mavenCentral()
+    jcenter()
+    maven {
+        url "./localRepo"
+    }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+if (project.hasProperty('travis')) {
+    println 'Using travis profile for building ' + project.getName()
+    apply from: 'gradle/build_dependencies.gradle'
+    apply from: 'gradle/profile-travis.gradle'
+} 
+
+dependencies {
+    // Local dependencies
+    compile("org.fzk.ipe:Tools:1.6")
+    compile("jaxen:jaxen:1.1.6")
+    compile("org.jdom:jdom:1.1")
+  // bag it
+  compile("gov.loc:bagit:5.2.0")
+  // sub modules
+  compile("edu.kit.ocrd:ocrd-workspace:0.1.0")
+    
+  compile("org.springframework.boot:spring-boot-starter-web")
+  
+  
+  // ArangoDB
+  compile("com.arangodb:arangodb-spring-data:3.1.1")
+   
+  compile("org.slf4j:slf4j-api:1.7.25")
+  compile("ch.qos.logback:logback-classic:1.2.3")
+  
+
+  testCompile("junit:junit:4.12")
+
+}
+
+jacocoTestReport {
+  group = "Reporting"
+  reports {
+    xml.enabled true
+    html.enabled true
+    html.destination "${buildDir}/reports/coverage"
+  }
+  afterEvaluate {
+    classDirectories = files(classDirectories.files.collect {
+        fileTree(dir: it)
+      })
+  }
+}
