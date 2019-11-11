@@ -110,9 +110,4 @@ public class PageExtractorUtil extends PageUtil {
     }
     return textRegions;
   }
-
-  public static void main(String[] args) throws Exception {
-//    Document document = JaxenUtil.getDocument();
-    PageExtractorUtil.extractAllTextRegions(new File("/home/hartmann-v/Downloads/provTest/data/mets.xml"), "hallo");
-  }
 }
