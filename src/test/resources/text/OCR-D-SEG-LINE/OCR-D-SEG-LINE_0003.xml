@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.0.0a1</pc:Creator>
+        <pc:Created>2019-11-08T12:32:52.471883</pc:Created>
+        <pc:LastChange>2019-11-08T12:32:52.471883</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-tesserocr-binarize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="region" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/OCR-D-IMG_0003.jpg" imageWidth="1995" imageHeight="3018">
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+                <pc:RegionRefIndexed index="11" regionRef="region0011"/>
+                <pc:RegionRefIndexed index="12" regionRef="region0012"/>
+                <pc:RegionRefIndexed index="13" regionRef="region0013"/>
+                <pc:RegionRefIndexed index="14" regionRef="region0014"/>
+                <pc:RegionRefIndexed index="15" regionRef="region0015"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="367,200 446,200 446,232 367,232"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:Coords points="367,200 446,200 446,232 367,232"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="370,304 1087,304 1087,777 370,777"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:Coords points="372,304 1086,304 1086,346 372,346"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:Coords points="416,359 1086,359 1086,401 416,401"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0002">
+                <pc:Coords points="420,414 1086,414 1086,448 420,448"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0003">
+                <pc:Coords points="420,469 1084,469 1084,504 420,504"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0004">
+                <pc:Coords points="415,524 1087,524 1087,569 415,569"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0005">
+                <pc:Coords points="418,579 1087,579 1087,614 418,614"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0006">
+                <pc:Coords points="419,634 798,634 798,667 419,667"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0007">
+                <pc:Coords points="370,690 1076,690 1076,732 370,732"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0008">
+                <pc:Coords points="371,745 665,745 665,777 371,777"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="372,843 841,843 841,939 372,939"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:Coords points="372,843 841,843 841,887 372,887"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0001">
+                <pc:Coords points="373,898 784,898 784,939 373,939"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="375,1007 1092,1007 1092,1260 375,1260"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:Coords points="375,1007 732,1007 732,1039 375,1039"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0001">
+                <pc:Coords points="376,1062 1090,1062 1090,1095 376,1095"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0002">
+                <pc:Coords points="377,1116 1092,1116 1092,1158 377,1158"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0003">
+                <pc:Coords points="422,1171 697,1171 697,1205 422,1205"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0004">
+                <pc:Coords points="378,1226 968,1226 968,1259 378,1259"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="376,1281 1130,1281 1130,1324 376,1324"/>
+            <pc:TextLine id="region0004_line0000">
+                <pc:Coords points="376,1281 1130,1281 1130,1324 376,1324"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="376,1336 1095,1336 1095,1699 376,1699"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:Coords points="423,1336 620,1336 620,1369 423,1369"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0001">
+                <pc:Coords points="376,1390 672,1390 672,1424 376,1424"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0002">
+                <pc:Coords points="376,1447 776,1447 776,1489 376,1489"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0003">
+                <pc:Coords points="376,1500 1095,1500 1095,1542 376,1542"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0004">
+                <pc:Coords points="424,1555 1095,1555 1095,1589 424,1589"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0005">
+                <pc:Coords points="423,1610 1017,1610 1017,1644 423,1644"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0006">
+                <pc:Coords points="378,1665 750,1665 750,1699 378,1699"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007">
+            <pc:Coords points="382,1939 1098,1939 1098,2366 382,2366"/>
+            <pc:TextLine id="region0007_line0000">
+                <pc:Coords points="385,1939 1098,1939 1098,1982 385,1982"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0001">
+                <pc:Coords points="426,1995 670,1995 670,2036 426,2036"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0002">
+                <pc:Coords points="384,2048 893,2048 893,2091 384,2091"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0003">
+                <pc:Coords points="382,2103 1098,2103 1098,2144 382,2144"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0004">
+                <pc:Coords points="429,2159 626,2159 626,2191 429,2191"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0005">
+                <pc:Coords points="385,2212 1097,2212 1097,2256 385,2256"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0006">
+                <pc:Coords points="431,2272 504,2272 504,2302 431,2302"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0007_line0007">
+                <pc:Coords points="384,2322 938,2322 938,2366 384,2366"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="966,2105 1099,2105 1099,2136 966,2136"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:Coords points="966,2105 1099,2105 1099,2136 966,2136"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009">
+            <pc:Coords points="906,2214 1097,2214 1097,2244 906,2244"/>
+            <pc:TextLine id="region0009_line0000">
+                <pc:Coords points="906,2214 1097,2214 1097,2244 906,2244"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010">
+            <pc:Coords points="384,2433 1101,2433 1101,2640 384,2640"/>
+            <pc:TextLine id="region0010_line0000">
+                <pc:Coords points="384,2433 934,2433 934,2477 384,2477"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0001">
+                <pc:Coords points="386,2486 1101,2486 1101,2530 386,2530"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0002">
+                <pc:Coords points="432,2542 997,2542 997,2584 432,2584"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0010_line0003">
+                <pc:Coords points="387,2598 894,2598 894,2640 387,2640"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0011">
+            <pc:Coords points="1026,195 1210,195 1210,235 1026,235"/>
+            <pc:TextLine id="region0011_line0000">
+                <pc:Coords points="1027,195 1210,195 1210,235 1027,235"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0012">
+            <pc:Coords points="1160,307 1891,307 1891,2263 1160,2263"/>
+            <pc:TextLine id="region0012_line0000">
+                <pc:Coords points="1160,307 1601,307 1601,348 1160,348"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0001">
+                <pc:Coords points="1160,362 1567,362 1567,396 1160,396"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0002">
+                <pc:Coords points="1160,417 1712,417 1712,460 1160,460"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0003">
+                <pc:Coords points="1161,473 1491,473 1491,506 1161,506"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0004">
+                <pc:Coords points="1160,528 1552,528 1552,570 1160,570"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0005">
+                <pc:Coords points="1161,581 1786,581 1786,624 1161,624"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0006">
+                <pc:Coords points="1162,636 1779,636 1779,680 1162,680"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0007">
+                <pc:Coords points="1163,690 1883,690 1883,735 1163,735"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0008">
+                <pc:Coords points="1209,747 1506,747 1506,780 1209,780"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0009">
+                <pc:Coords points="1164,798 1881,798 1881,842 1164,842"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0010">
+                <pc:Coords points="1213,854 1761,854 1761,888 1213,888"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0011">
+                <pc:Coords points="1164,911 1462,911 1462,952 1164,952"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0012">
+                <pc:Coords points="1164,964 1594,964 1594,998 1164,998"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0013">
+                <pc:Coords points="1164,1018 1641,1018 1641,1060 1164,1060"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0014">
+                <pc:Coords points="1165,1072 1884,1072 1884,1107 1165,1107"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0015">
+                <pc:Coords points="1210,1127 1838,1127 1838,1170 1210,1170"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0016">
+                <pc:Coords points="1166,1182 1650,1182 1650,1225 1166,1225"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0017">
+                <pc:Coords points="1167,1237 1885,1237 1885,1279 1167,1279"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0018">
+                <pc:Coords points="1213,1291 1886,1291 1886,1325 1213,1325"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0019">
+                <pc:Coords points="1213,1350 1264,1350 1264,1378 1213,1378"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0020">
+                <pc:Coords points="1167,1400 1886,1400 1886,1434 1167,1434"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0021">
+                <pc:Coords points="1168,1455 1655,1455 1655,1497 1168,1497"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0022">
+                <pc:Coords points="1168,1511 1367,1511 1367,1543 1168,1543"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0023">
+                <pc:Coords points="1168,1565 1554,1565 1554,1599 1168,1599"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0024">
+                <pc:Coords points="1170,1620 1637,1620 1637,1654 1170,1654"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0025">
+                <pc:Coords points="1170,1673 1739,1673 1739,1717 1170,1717"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0026">
+                <pc:Coords points="1170,1728 1889,1728 1889,1772 1170,1772"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0027">
+                <pc:Coords points="1216,1783 1737,1783 1737,1826 1216,1826"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0028">
+                <pc:Coords points="1171,1838 1887,1838 1887,1880 1171,1880"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0029">
+                <pc:Coords points="1219,1892 1746,1892 1746,1926 1219,1926"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0030">
+                <pc:Coords points="1171,1948 1607,1948 1607,1990 1171,1990"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0031">
+                <pc:Coords points="1171,2003 1463,2003 1463,2036 1171,2036"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0032">
+                <pc:Coords points="1173,2056 1748,2056 1748,2099 1173,2099"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0033">
+                <pc:Coords points="1173,2112 1505,2112 1505,2155 1173,2155"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0034">
+                <pc:Coords points="1174,2165 1891,2165 1891,2210 1174,2210"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0035">
+                <pc:Coords points="1218,2221 1571,2221 1571,2263 1218,2263"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0013">
+            <pc:Coords points="1174,2320 1581,2320 1581,2623 1174,2623"/>
+            <pc:TextLine id="region0013_line0000">
+                <pc:Coords points="1174,2320 1581,2320 1581,2352 1174,2352"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0001">
+                <pc:Coords points="1220,2372 1581,2372 1581,2413 1220,2413"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0002">
+                <pc:Coords points="1175,2428 1411,2428 1411,2460 1175,2460"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0003">
+                <pc:Coords points="1174,2483 1374,2483 1374,2515 1174,2515"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0004">
+                <pc:Coords points="1175,2537 1542,2537 1542,2579 1175,2579"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0005">
+                <pc:Coords points="1224,2591 1581,2591 1581,2623 1224,2623"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0014">
+            <pc:Coords points="1412,2317 1890,2317 1890,2413 1412,2413"/>
+            <pc:TextLine id="region0014_line0000">
+                <pc:Coords points="1412,2317 1890,2317 1890,2360 1412,2360"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0001">
+                <pc:Coords points="1412,2371 1838,2371 1838,2413 1412,2413"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0015">
+            <pc:Coords points="1348,2536 1893,2536 1893,2635 1348,2635"/>
+            <pc:TextLine id="region0015_line0000">
+                <pc:Coords points="1353,2536 1893,2536 1893,2579 1353,2579"/>
+            </pc:TextLine>
+            <pc:TextLine id="region0015_line0001">
+                <pc:Coords points="1348,2591 1792,2591 1792,2635 1348,2635"/>
+            </pc:TextLine>
+        </pc:TextRegion>
+        <pc:TableRegion id="region0006">
+            <pc:Coords points="382,1719 1095,1719 1095,1917 382,1917"/>
+        </pc:TableRegion>
+    </pc:Page>
+</pc:PcGts>

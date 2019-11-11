@@ -18,6 +18,7 @@ package edu.kit.ocrd.workspace;
 import edu.kit.ocrd.dao.MetsMetadata;
 import edu.kit.ocrd.dao.ModsIdentifier;
 import edu.kit.ocrd.dao.PageFeatures;
+import edu.kit.ocrd.dao.TextRegion;
 import edu.kit.ocrd.workspace.entity.ClassificationMetadata;
 import edu.kit.ocrd.workspace.entity.GenreMetadata;
 import edu.kit.ocrd.workspace.entity.GroundTruthProperties;
@@ -26,6 +27,7 @@ import edu.kit.ocrd.workspace.entity.MetsFile;
 import edu.kit.ocrd.workspace.entity.MetsIdentifier;
 import edu.kit.ocrd.workspace.entity.MetsProperties;
 import edu.kit.ocrd.workspace.entity.PageMetadata;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -270,6 +272,24 @@ public class MetsDocumentUtil extends MetsUtil {
       }
     }
     return pageMetadataList;
+  }
+
+  /**
+   * Extract all 'URLs' of referenced page.xml files.
+   *
+   * @param metsDocument METS file.
+   * @return List of text regions.
+   *
+   * @throws Exception An error occurred during parsing METS file.
+   */
+  public static List<String> extractPageUrls(final Document metsDocument) throws Exception {
+    List<String> pageUrls = new ArrayList<>();
+    Element root = metsDocument.getRootElement();
+    String[] values = JaxenUtil.getAttributesValues(root, "//mets:file[@MIMETYPE='application/vnd.prima.page+xml']/mets:FLocat/@xlink:href", getNamespaces());
+      for (String href : values) {
+        pageUrls.add(href);
+      }
+    return pageUrls;
   }
 
   /**

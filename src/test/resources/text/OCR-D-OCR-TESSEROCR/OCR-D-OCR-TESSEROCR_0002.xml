@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.0.0a1</pc:Creator>
+        <pc:Created>2019-11-08T12:32:52.469355</pc:Created>
+        <pc:LastChange>2019-11-08T12:32:52.469355</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-tesserocr-binarize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="region" type="operation_level"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="False" type="crop_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/line" value="ocrd-tesserocr-segment-line">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="True" type="overwrite_lines"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-tesserocr-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="False" type="overwrite_words"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/OCR-D-IMG_0002.jpg" imageWidth="1995" imageHeight="3333">
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+                <pc:RegionRefIndexed index="8" regionRef="region0008"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+                <pc:RegionRefIndexed index="11" regionRef="region0011"/>
+                <pc:RegionRefIndexed index="12" regionRef="region0012"/>
+                <pc:RegionRefIndexed index="13" regionRef="region0013"/>
+                <pc:RegionRefIndexed index="14" regionRef="region0014"/>
+                <pc:RegionRefIndexed index="15" regionRef="region0015"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0000">
+            <pc:Coords points="895,207 1079,207 1079,254 895,254"/>
+            <pc:TextLine id="region0000_line0000">
+                <pc:Coords points="895,207 1079,207 1079,254 895,254"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>нءеg코stεיrء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>нءеg코stεיrء</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0001">
+            <pc:Coords points="232,329 951,329 951,855 232,855"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:Coords points="232,329 648,329 648,376 232,376"/>
+                <pc:TextEquiv conf="0.52">
+                    <pc:Unicode>lsmaprmdung 垂巨土 45مة</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:Coords points="232,387 819,387 819,435 232,435"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>سلاпpнпdungpnو 萎童ьగుلعاءعدс 6 5مة</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0002">
+                <pc:Coords points="232,448 584,448 584,496 232,496"/>
+                <pc:TextEquiv conf="0.41">
+                    <pc:Unicode>343mp5r5snms 384غا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0003">
+                <pc:Coords points="234,507 809,507 809,556 234,556"/>
+                <pc:TextEquiv conf="0.56">
+                    <pc:Unicode>нmp코rist코schо rmmodo 305غا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0004">
+                <pc:Coords points="233,567 809,567 809,617 233,617"/>
+                <pc:TextEquiv conf="0.49">
+                    <pc:Unicode>вndgοmm des ノ某丹నrзсts 203غا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0005">
+                <pc:Coords points="233,626 951,626 951,676 233,676"/>
+                <pc:TextEquiv conf="0.52">
+                    <pc:Unicode>뀐nсrg코o 2364c specmsche 끄 53و</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0006">
+                <pc:Coords points="281,686 950,686 950,734 281,734"/>
+                <pc:TextEquiv conf="0.58">
+                    <pc:Unicode>8r68e der phуs코schеn 끄 877೦</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0007">
+                <pc:Coords points="281,747 949,747 949,795 281,795"/>
+                <pc:TextEquiv conf="0.58">
+                    <pc:Unicode>0r68o der psych5schen 봤 878d</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0008">
+                <pc:Coords points="281,808 951,808 951,854 281,854"/>
+                <pc:TextEquiv conf="0.45">
+                    <pc:Unicode>00nstanm dcr phys童scدliеn 뀜칵 878ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>lsmaprmdung 垂巨土 45مة
+سلاпpнпdungpnو 萎童ьగుلعاءعدс 6 5مة
+343mp5r5snms 384غا
+нmp코rist코schо rmmodo 305غا
+вndgοmm des ノ某丹నrзсts 203غا
+뀐nсrg코o 2364c specmsche 끄 53و
+8r68e der phуs코schеn 끄 877೦
+0r68o der psych5schen 봤 878d
+00nstanm dcr phys童scدliеn 뀜칵 878ء</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002">
+            <pc:Coords points="281,868 952,868 952,916 281,916"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:Coords points="281,868 952,868 952,916 281,916"/>
+                <pc:TextEquiv conf="0.53">
+                    <pc:Unicode>2unahme der psyddschen 꿋그ㅁ 378</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>2unahme der psyddschen 꿋그ㅁ 378</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003">
+            <pc:Coords points="234,928 959,928 959,2667 234,2667"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:Coords points="238,928 848,928 848,978 238,978"/>
+                <pc:TextEquiv conf="0.58">
+                    <pc:Unicode>нnt꿋కmung der ohientc 355ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0001">
+                <pc:Coords points="234,990 835,990 835,1038 234,1038"/>
+                <pc:TextEquiv conf="0.67">
+                    <pc:Unicode>옆בבit舅сבغاnungsmrstcnung l5 8ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0002">
+                <pc:Coords points="234,1051 623,1051 623,1099 234,1099"/>
+                <pc:TextEquiv conf="0.53">
+                    <pc:Unicode>mntsoheidung 223و</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0003">
+                <pc:Coords points="236,1111 641,1111 641,1158 236,1158"/>
+                <pc:TextEquiv conf="0.51">
+                    <pc:Unicode>囧ntsch고iവിung 522上</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0004">
+                <pc:Coords points="234,1171 919,1171 919,1218 234,1218"/>
+                <pc:TextEquiv conf="0.58">
+                    <pc:Unicode>пntש虽сldungеnو рsyohisсhc 324ف</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0005">
+                <pc:Coords points="235,1232 953,1232 953,1279 235,1279"/>
+                <pc:TextEquiv conf="0.54">
+                    <pc:Unicode>lcrrahrung m童ttelhаrо 388ء tm</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0006">
+                <pc:Coords points="281,1291 669,1291 669,1329 281,1329"/>
+                <pc:TextEquiv conf="0.56">
+                    <pc:Unicode>nnttelhare 且 868೦</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0007">
+                <pc:Coords points="236,1351 838,1351 838,1400 236,1400"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>lsrrmlungg бе꿨ihl dеrsغا 256غا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0008">
+                <pc:Coords points="236,1412 833,1412 833,1461 236,1461"/>
+                <pc:TextEquiv conf="0.59">
+                    <pc:Unicode>lsrinnerung১ m코ttelhаre 285ف</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0009">
+                <pc:Coords points="236,1472 680,1472 680,1520 236,1520"/>
+                <pc:TextEquiv conf="0.53">
+                    <pc:Unicode>35r5nn erungslaild 288و</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0010">
+                <pc:Coords points="237,1533 733,1533 733,1580 237,1580"/>
+                <pc:TextEquiv conf="0.51">
+                    <pc:Unicode>ㅁнr코nnеrungsدgدधाs童蔓ihl 287لد</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0011">
+                <pc:Coords points="237,1591 955,1591 955,1640 237,1640"/>
+                <pc:TextEquiv conf="0.5">
+                    <pc:Unicode>lsrinnerungsmrgenge 288مة lchp</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0012">
+                <pc:Coords points="282,1652 956,1652 956,1700 282,1700"/>
+                <pc:TextEquiv conf="0.57">
+                    <pc:Unicode>theilung der li 268ء веمةдеhung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0013">
+                <pc:Coords points="283,1713 954,1713 954,1759 283,1759"/>
+                <pc:TextEquiv conf="0.61">
+                    <pc:Unicode>der 꿨 mn লোiеdеrerlrеnnung 285د</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0014">
+                <pc:Coords points="284,1773 958,1773 958,1821 284,1821"/>
+                <pc:TextEquiv conf="0.58">
+                    <pc:Unicode>8еm5ehung dcr ת mпغاкr고mnnung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0015">
+                <pc:Coords points="287,1837 363,1837 363,1871 287,1871"/>
+                <pc:TextEquiv conf="0.6">
+                    <pc:Unicode>286و</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0016">
+                <pc:Coords points="239,1893 955,1893 955,1942 239,1942"/>
+                <pc:TextEquiv conf="0.52">
+                    <pc:Unicode>l5r5nnеrungsνorstеl고ungеn 288289و</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0017">
+                <pc:Coords points="239,1954 901,1954 901,2002 239,2002"/>
+                <pc:TextEquiv conf="0.54">
+                    <pc:Unicode>圆rlব্লennungو sinnnche 278० 282प</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0018">
+                <pc:Coords points="239,2014 728,2014 728,2062 239,2062"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>团rlகennungsge꿋йhl 288بية</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0019">
+                <pc:Coords points="240,2073 959,2073 959,2123 240,2123"/>
+                <pc:TextEquiv conf="0.51">
+                    <pc:Unicode>圈围くеnnungggsanrgrangوধ воｸر코ehung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0020">
+                <pc:Coords points="287,2135 842,2135 842,2181 287,2181"/>
+                <pc:TextEquiv conf="0.61">
+                    <pc:Unicode>dessء ಉr 모고r도nnerung 286س</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0021">
+                <pc:Coords points="240,2195 816,2195 816,2242 240,2242"/>
+                <pc:TextEquiv conf="0.45">
+                    <pc:Unicode>그圃r고е코dеnو sddm dessㅁ 255و</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0022">
+                <pc:Coords points="241,2256 958,2256 958,2305 241,2305"/>
+                <pc:TextEquiv conf="0.44">
+                    <pc:Unicode>mnregharlreitsdnderungenو cеnغا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0023">
+                <pc:Coords points="285,2318 484,2318 484,2355 285,2355"/>
+                <pc:TextEquiv conf="0.63">
+                    <pc:Unicode>tmle 835ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0024">
+                <pc:Coords points="242,2374 959,2374 959,2424 242,2424"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>нmمartung 372ㅁ 385ء 8emhl dpr</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0025">
+                <pc:Coords points="282,2437 433,2437 433,2473 282,2473"/>
+                <pc:TextEquiv conf="0.51">
+                    <pc:Unicode>鲁邑 255ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0026">
+                <pc:Coords points="242,2497 702,2497 702,2546 242,2546"/>
+                <pc:TextEquiv conf="0.53">
+                    <pc:Unicode>끄rgйرnクرungs童눌uبيةhcn 78o</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0027">
+                <pc:Coords points="243,2557 871,2557 871,2595 243,2595"/>
+                <pc:TextEquiv conf="0.48">
+                    <pc:Unicode>нхവി童a數οnsクءus竞呈indc వేhకు 337п</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0028">
+                <pc:Coords points="242,2618 566,2618 566,2667 242,2667"/>
+                <pc:TextEquiv conf="0.54">
+                    <pc:Unicode>lhcpedment 22د</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>нnt꿋కmung der ohientc 355ء
+옆בבit舅сבغاnungsmrstcnung l5 8ء
+mntsoheidung 223و
+囧ntsch고iവിung 522上
+пntש虽сldungеnو рsyohisсhc 324ف
+lcrrahrung m童ttelhаrо 388ء tm
+nnttelhare 且 868೦
+lsrrmlungg бе꿨ihl dеrsغا 256غا
+lsrinnerung১ m코ttelhаre 285ف
+35r5nn erungslaild 288و
+ㅁнr코nnеrungsدgدधाs童蔓ihl 287لد
+lsrinnerungsmrgenge 288مة lchp
+theilung der li 268ء веمةдеhung
+der 꿨 mn লোiеdеrerlrеnnung 285د
+8еm5ehung dcr ת mпغاкr고mnnung
+286و
+l5r5nnеrungsνorstеl고ungеn 288289و
+圆rlব্লennungو sinnnche 278० 282प
+团rlகennungsge꿋йhl 288بية
+圈围くеnnungggsanrgrangوধ воｸر코ehung
+dessء ಉr 모고r도nnerung 286س
+그圃r고е코dеnو sddm dessㅁ 255و
+mnregharlreitsdnderungenو cеnغا
+tmle 835ء
+нmمartung 372ㅁ 385ء 8emhl dpr
+鲁邑 255ء
+끄rgйرnクرungs童눌uبيةhcn 78o
+нхവി童a數οnsクءus竞呈indc వేhకు 337п
+lhcpedment 22د</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004">
+            <pc:Coords points="875,2266 958,2266 958,2290 875,2290"/>
+            <pc:TextLine id="region0004_line0000">
+                <pc:Coords points="875,2266 958,2266 958,2290 875,2290"/>
+                <pc:TextEquiv conf="0.62">
+                    <pc:Unicode>cenد</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>cenد</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005">
+            <pc:Coords points="242,2724 959,2724 959,2883 242,2883"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:Coords points="242,2724 959,2724 959,2773 242,2773"/>
+                <pc:TextEquiv conf="0.52">
+                    <pc:Unicode>도ধ呈غاьl고еو richdge und 董വിsсheو lلالد苋еبية</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0001">
+                <pc:Coords points="288,2786 629,2786 629,2822 288,2822"/>
+                <pc:TextEquiv conf="0.62">
+                    <pc:Unicode>thodo ders 302س</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0005_line0002">
+                <pc:Coords points="243,2845 741,2845 741,2883 243,2883"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>parhenhnndhdt 84غا 86ㅁ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>도ধ呈غاьl고еو richdge und 董വിsсheو lلالد苋еبية
+thodo ders 302س
+parhenhnndhdt 84غا 86ㅁ</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006">
+            <pc:Coords points="870,1591 992,1591 992,1627 870,1627"/>
+            <pc:TextLine id="region0006_line0000">
+                <pc:Coords points="870,1591 992,1591 992,1627 870,1627"/>
+                <pc:TextEquiv conf="0.49">
+                    <pc:Unicode>lcdp 몰</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>lcdp 몰</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0008">
+            <pc:Coords points="726,2349 996,2349 996,2411 726,2411"/>
+            <pc:TextLine id="region0008_line0000">
+                <pc:Coords points="726,2349 996,2349 996,2411 726,2411"/>
+                <pc:TextEquiv conf="0.45">
+                    <pc:Unicode>eemm ന്ന п</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>eemm ന്ന п</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009">
+            <pc:Coords points="1685,204 1734,204 1734,245 1685,245"/>
+            <pc:TextLine id="region0009_line0000">
+                <pc:Coords points="1685,204 1734,204 1734,244 1685,244"/>
+                <pc:TextEquiv conf="0.57">
+                    <pc:Unicode>87</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>87</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010">
+            <pc:Coords points="987,327 1420,327 1420,365 987,365"/>
+            <pc:TextLine id="region0010_line0000">
+                <pc:Coords points="987,327 1420,327 1420,365 987,365"/>
+                <pc:TextEquiv conf="0.56">
+                    <pc:Unicode>క 腰uغاhenсontrلدءьst 82مة</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>క 腰uغاhenсontrلدءьst 82مة</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0011">
+            <pc:Coords points="1023,387 1549,387 1549,495 1023,495"/>
+            <pc:TextLine id="region0011_line0000">
+                <pc:Coords points="1024,387 1404,387 1404,424 1024,424"/>
+                <pc:TextEquiv conf="0.61">
+                    <pc:Unicode>lparh еn dreiodc 7 0с</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0011_line0001">
+                <pc:Coords points="1023,447 1549,447 1549,495 1023,495"/>
+                <pc:TextEquiv conf="0.46">
+                    <pc:Unicode>lpmغاlزеnеmpбndungcп 66مة</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>lparh еn dreiodc 7 0с
+lpmغاlزеnеmpбndungcп 66مة</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0012">
+            <pc:Coords points="987,507 1354,507 1354,603 987,603"/>
+            <pc:TextLine id="region0012_line0000">
+                <pc:Coords points="987,507 1354,507 1354,543 987,543"/>
+                <pc:TextEquiv conf="0.53">
+                    <pc:Unicode>론 loarhenlcrds 67 د</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0001">
+                <pc:Coords points="988,563 1320,563 1320,603 988,603"/>
+                <pc:TextEquiv conf="0.53">
+                    <pc:Unicode>虔 pardpnton 88مة</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>론 loarhenlcrds 67 د
+虔 pardpnton 88مة</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0013">
+            <pc:Coords points="1024,625 1743,625 1743,1446 1024,1446"/>
+            <pc:TextLine id="region0013_line0000">
+                <pc:Coords points="1025,625 1739,625 1739,673 1025,673"/>
+                <pc:TextEquiv conf="0.36">
+                    <pc:Unicode>loechnerوs рsyсhоمةphزrsمةchcسיبرs 更స홀pف</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0001">
+                <pc:Coords points="1071,686 1250,686 1250,721 1071,721"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>setn 303د</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0002">
+                <pc:Coords points="1024,745 1740,745 1740,791 1024,791"/>
+                <pc:TextEquiv conf="0.52">
+                    <pc:Unicode>lsemerد lmdt童غاlоבوеد methodc dcrsد</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0003">
+                <pc:Coords points="1073,809 1146,809 1146,842 1073,842"/>
+                <pc:TextEquiv conf="0.54">
+                    <pc:Unicode>802</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0004">
+                <pc:Coords points="1025,864 1690,864 1690,904 1025,904"/>
+                <pc:TextEquiv conf="0.56">
+                    <pc:Unicode>petiscldsmus 858مة غا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0005">
+                <pc:Coords points="1025,926 1417,926 1417,964 1025,964"/>
+                <pc:TextEquiv conf="0.56">
+                    <pc:Unicode>لعاхаt도onsl案nie 359ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0006">
+                <pc:Coords points="1024,986 1444,986 1444,1034 1024,1034"/>
+                <pc:TextEquiv conf="0.45">
+                    <pc:Unicode>pimdonspuntt 卫肌肌</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0007">
+                <pc:Coords points="1027,1048 1582,1048 1582,1095 1027,1095"/>
+                <pc:TextEquiv conf="0.57">
+                    <pc:Unicode>pl呈呈оhеnന്നrstеllungcn لعا 上</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0008">
+                <pc:Coords points="1026,1108 1587,1108 1587,1145 1026,1145"/>
+                <pc:TextEquiv conf="0.62">
+                    <pc:Unicode>m5e8en dor 2c5t 369غا iss೦</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0009">
+                <pc:Coords points="1025,1167 1604,1167 1604,1215 1025,1215"/>
+                <pc:TextEquiv conf="0.57">
+                    <pc:Unicode>围רoiدiiבge꿋dh고و opt5sches 396د</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0010">
+                <pc:Coords points="1026,1227 1624,1227 1624,1275 1026,1275"/>
+                <pc:TextEquiv conf="0.44">
+                    <pc:Unicode>lsortp꿨anｸرungsinstinсtе 2527a</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0011">
+                <pc:Coords points="1027,1288 1492,1288 1492,1336 1027,1336"/>
+                <pc:TextEquiv conf="0.52">
+                    <pc:Unicode>꿈rеבτวdsuggеs竞5on 823د</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0012">
+                <pc:Coords points="1027,1347 1743,1347 1743,1396 1027,1396"/>
+                <pc:TextEquiv conf="0.54">
+                    <pc:Unicode>墅un ctionenｱ psychophysischоو سلازد</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0013_line0013">
+                <pc:Coords points="1074,1409 1499,1409 1499,1446 1074,1446"/>
+                <pc:TextEquiv conf="0.59">
+                    <pc:Unicode>ennsadon dem 240ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>loechnerوs рsyсhоمةphزrsمةchcسיبرs 更స홀pف
+setn 303د
+lsemerد lmdt童غاlоבوеد methodc dcrsد
+802
+petiscldsmus 858مة غا
+لعاхаt도onsl案nie 359ء
+pimdonspuntt 卫肌肌
+pl呈呈оhеnന്നrstеllungcn لعا 上
+m5e8en dor 2c5t 369غا iss೦
+围רoiدiiבge꿋dh고و opt5sches 396د
+lsortp꿨anｸرungsinstinсtе 2527a
+꿈rеבτวdsuggеs竞5on 823د
+墅un ctionenｱ psychophysischоو سلازد
+ennsadon dem 240ء</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0014">
+            <pc:Coords points="1028,1515 1749,1515 1749,2884 1028,2884"/>
+            <pc:TextLine id="region0014_line0000">
+                <pc:Coords points="1028,1515 1743,1515 1743,1563 1028,1563"/>
+                <pc:TextEquiv conf="0.58">
+                    <pc:Unicode>sreherdeヌ 5hro 8edеutung सिr d童е</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0001">
+                <pc:Coords points="1074,1575 1743,1575 1743,1625 1074,1625"/>
+                <pc:TextEquiv conf="0.66">
+                    <pc:Unicode>sprachentप्रबंсlব্লlung des mndcs</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0002">
+                <pc:Coords points="1076,1640 1151,1640 1151,1674 1076,1674"/>
+                <pc:TextEquiv conf="0.67">
+                    <pc:Unicode>842ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0003">
+                <pc:Coords points="1030,1697 1492,1697 1492,1745 1030,1745"/>
+                <pc:TextEquiv conf="0.56">
+                    <pc:Unicode>seherdensprache 850و</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0004">
+                <pc:Coords points="1033,1756 1555,1756 1555,1805 1033,1805"/>
+                <pc:TextEquiv conf="0.41">
+                    <pc:Unicode>saehndg psycmsche 306ㅁ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0005">
+                <pc:Coords points="1030,1816 1744,1816 1744,1855 1030,1855"/>
+                <pc:TextEquiv conf="0.56">
+                    <pc:Unicode>〇еd55نchtniss 290مة 五l童erssсhলোund</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0006">
+                <pc:Coords points="1076,1876 1313,1876 1313,1915 1076,1915"/>
+                <pc:TextEquiv conf="0.6">
+                    <pc:Unicode>des бл 292مة</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0007">
+                <pc:Coords points="1030,1939 1303,1939 1303,1975 1030,1975"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>бе童വിlеn 398مة</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0008">
+                <pc:Coords points="1030,1995 1743,1995 1743,2035 1030,2035"/>
+                <pc:TextEquiv conf="0.57">
+                    <pc:Unicode>бе重йhl 43د вin垒فаرchе бе꿋dلعاe 87غا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0009">
+                <pc:Coords points="1077,2055 1745,2055 1745,2103 1077,2103"/>
+                <pc:TextEquiv conf="0.59">
+                    <pc:Unicode>sinnnches 0ת 88مة 日аuptriсhد</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0010">
+                <pc:Coords points="1076,2116 1745,2116 1745,2166 1076,2166"/>
+                <pc:TextEquiv conf="0.61">
+                    <pc:Unicode>舌ungсn des 0л 97غا веruلعاgеnde</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0011">
+                <pc:Coords points="1078,2177 1746,2177 1746,2214 1078,2214"/>
+                <pc:TextEquiv conf="0.57">
+                    <pc:Unicode>genihle 98ف i02 бл der 끄ust</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0012">
+                <pc:Coords points="1079,2236 1745,2236 1745,2275 1079,2275"/>
+                <pc:TextEquiv conf="0.6">
+                    <pc:Unicode>98و l02 卫重几 0১ der mdust 98ء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0013">
+                <pc:Coords points="1080,2296 1745,2296 1745,2346 1080,2346"/>
+                <pc:TextEquiv conf="0.54">
+                    <pc:Unicode>ങ്ങ끄 mь нസgеnαеs 旺 gs ien</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0014">
+                <pc:Coords points="1077,2357 1747,2357 1747,2405 1077,2405"/>
+                <pc:TextEquiv conf="0.56">
+                    <pc:Unicode>غاτءбsеndes 0১ 88مة 303 spsumenء</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0015">
+                <pc:Coords points="1080,2418 1746,2418 1746,2457 1080,2457"/>
+                <pc:TextEquiv conf="0.62">
+                    <pc:Unicode>des on 98و i02د 355nnuss des</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0016">
+                <pc:Coords points="1079,2478 1746,2478 1746,2524 1079,2524"/>
+                <pc:TextEquiv conf="0.53">
+                    <pc:Unicode>旺 аuర్ die geitanrstenungen 375غا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0017">
+                <pc:Coords points="1079,2536 1747,2536 1747,2585 1079,2585"/>
+                <pc:TextEquiv conf="0.57">
+                    <pc:Unicode>i84مة 2usammengesctstc 0cmhlc</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0018">
+                <pc:Coords points="1080,2596 1747,2596 1747,2645 1080,2645"/>
+                <pc:TextEquiv conf="0.58">
+                    <pc:Unicode>isdi νerשeьungеn der 0emhle</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0019">
+                <pc:Coords points="1080,2655 1748,2655 1748,2695 1080,2695"/>
+                <pc:TextEquiv conf="0.55">
+                    <pc:Unicode>388مة 驾хtеns코ㅠе 0л 398مة hatem</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0020">
+                <pc:Coords points="1077,2716 1747,2716 1747,2764 1077,2764"/>
+                <pc:TextEquiv conf="0.57">
+                    <pc:Unicode>shm бп 고93لعا вьythm코schеs 0غا</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0021">
+                <pc:Coords points="1080,2776 1746,2776 1746,2824 1080,2824"/>
+                <pc:TextEquiv conf="0.62">
+                    <pc:Unicode>396ء l99ء 0ء der вrשaرrtung 255د</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0014_line0022">
+                <pc:Coords points="1080,2837 1749,2837 1749,2884 1080,2884"/>
+                <pc:TextEquiv conf="0.62">
+                    <pc:Unicode>臣 der тh百ьt코glcе도t 255بية 0 dcs</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>sreherdeヌ 5hro 8edеutung सिr d童е
+sprachentप्रबंсlব্লlung des mndcs
+842ء
+seherdensprache 850و
+saehndg psycmsche 306ㅁ
+〇еd55نchtniss 290مة 五l童erssсhলোund
+des бл 292مة
+бе童വിlеn 398مة
+бе重йhl 43د вin垒فаرchе бе꿋dلعاe 87غا
+sinnnches 0ת 88مة 日аuptriсhد
+舌ungсn des 0л 97غا веruلعاgеnde
+genihle 98ف i02 бл der 끄ust
+98و l02 卫重几 0১ der mdust 98ء
+ങ്ങ끄 mь нസgеnαеs 旺 gs ien
+غاτءбsеndes 0১ 88مة 303 spsumenء
+des on 98و i02د 355nnuss des
+旺 аuర్ die geitanrstenungen 375غا
+i84مة 2usammengesctstc 0cmhlc
+isdi νerשeьungеn der 0emhle
+388مة 驾хtеns코ㅠе 0л 398مة hatem
+shm бп 고93لعا вьythm코schеs 0غا
+396ء l99ء 0ء der вrשaرrtung 255د
+臣 der тh百ьt코glcе도t 255بية 0 dcs</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0015">
+            <pc:Coords points="1411,2912 1474,2912 1474,2945 1411,2945"/>
+            <pc:TextLine id="region0015_line0000">
+                <pc:Coords points="1412,2912 1474,2912 1474,2944 1412,2944"/>
+                <pc:TextEquiv conf="0.48">
+                    <pc:Unicode>25ومر</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>25ومر</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="region0007">
+            <pc:Coords points="986,328 995,328 995,1609 986,1609"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>
