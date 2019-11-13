@@ -15,7 +15,6 @@
  */
 package edu.kit.ocrd.workspace.provenance;
 
-import edu.kit.ocrd.workspace.entity.*;
 import java.util.Date;
 
 /**

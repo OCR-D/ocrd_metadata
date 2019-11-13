@@ -29,7 +29,7 @@ import org.springframework.data.annotation.Id;
  */
 @Document("provenanceMetadata")
 @HashIndex(fields = {"resourceId", "workflowId"})
-public class ProvenanceMetadata {
+public final class ProvenanceMetadata {
 
   /**
    * ID of XSD document.
@@ -256,12 +256,8 @@ public class ProvenanceMetadata {
   }
 
   public Object clone() {
-    ProvenanceMetadata provMd = null;
-    try {
-      provMd = (ProvenanceMetadata) super.clone();
-    } catch (CloneNotSupportedException e) {
-      provMd = new ProvenanceMetadata();
-    }
+    ProvenanceMetadata provMd = new ProvenanceMetadata();
+
     provMd.durationProcessor = durationProcessor;
     provMd.durationWorkflow = durationWorkflow;
     provMd.inputFileGrps = inputFileGrps;

@@ -17,7 +17,6 @@ package edu.kit.ocrd.workspace.provenance;
 
 import edu.kit.ocrd.workspace.MetsUtil;
 import edu.kit.ocrd.workspace.entity.ProvenanceMetadata;
-import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -60,22 +59,23 @@ public class ProvenanceUtil {
    * Provenance document.
    */
   private Document provDocument;
-/**
- * All activies of type  'ocrd:processor'.
- */
-    Map<String, ProvenanceActivity> processorActivities;
-/**
- * All entities of type 'ocrd:mets__referencedFile'.
- */
-    Map<String, ProvenanceEntity> referencedFileEntities;
-/**
- * All entities of type 'ocrd:parameter__file'.
- */
-    Map<String, ProvenanceEntity> parameterFileEntities;
-/**
- * Map linking fileID to groupID.
- */
-    Map<String, String> mapID2Group;
+  /**
+   * All activies of type 'ocrd:processor'.
+   */
+  Map<String, ProvenanceActivity> processorActivities;
+  /**
+   * All entities of type 'ocrd:mets__referencedFile'.
+   */
+  Map<String, ProvenanceEntity> referencedFileEntities;
+  /**
+   * All entities of type 'ocrd:parameter__file'.
+   */
+  Map<String, ProvenanceEntity> parameterFileEntities;
+  /**
+   * Map linking fileID to groupID.
+   */
+  Map<String, String> mapID2Group;
+
   private ProvenanceUtil(final Document provDocument, final Document metsDocument) {
     this.provDocument = provDocument;
     this.metsDocument = metsDocument;
@@ -88,8 +88,7 @@ public class ProvenanceUtil {
     }
     mapID2Group = createMapID2Group(allFileIds);
   }
-  
-  
+
   /**
    * Extract provenance metadata from provenance and METS document.
    *
@@ -118,8 +117,7 @@ public class ProvenanceUtil {
   }
 
   /**
-   * Extract processor metadata from provenance document
-   * for given workflow.
+   * Extract processor metadata from provenance document for given workflow.
    *
    * @param provMetadata provenance metadata of workflow.
    * @return List with all found files.
@@ -254,8 +252,11 @@ public class ProvenanceUtil {
    * @return duration in [s]
    */
   private Long getDuration(Date startDate, Date endDate) {
-    Long duration = startDate.getTime() - endDate.getTime();
-    duration = (Math.abs(duration) + 500l) / 1000l;
+    Long duration = 0l;
+    if ((startDate != null) && (endDate != null)) {
+      duration = startDate.getTime() - endDate.getTime();
+      duration = (Math.abs(duration) + 500l) / 1000l;
+    }
     return duration;
   }
 }
