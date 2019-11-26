@@ -3,8 +3,24 @@
  * 
  */
 
-task buildOcrdWorkspace(type:Exec){
+task buildBagitLibrary(type:Exec){
 
+  workingDir 'submodules/bagging'
+  commandLine './gradlew', '-Pgroup=edu.kit.ocrd', '-Pversion=${version}', 'build', 'install'
+
+   standardOutput = new ByteArrayOutputStream()
+
+   ext.output = {
+      return standardOutput.toString()
+   }
+}
+/**Build the ocrd workspace validation library. 
+ * This dependeny is build after the service-base dependency has been built.
+ * 
+ */
+
+task buildOcrdWorkspace(type:Exec){
+  dependsOn buildBagitLibrary
   workingDir 'submodules/ocrd_workspace'
   commandLine './gradlew', 'build', 'install'
 

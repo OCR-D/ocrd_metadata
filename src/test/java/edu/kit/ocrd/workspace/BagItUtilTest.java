@@ -15,13 +15,12 @@
  */
 package edu.kit.ocrd.workspace;
 
+import com.github.jscancella.domain.Bag;
+import com.github.jscancella.exceptions.InvalidBagitFileFormatException;
+import com.github.jscancella.exceptions.MaliciousPathException;
+import com.github.jscancella.exceptions.UnparsableVersionException;
+import com.github.jscancella.reader.BagReader;
 import edu.kit.ocrd.exception.BagItException;
-import gov.loc.repository.bagit.domain.Bag;
-import gov.loc.repository.bagit.exceptions.InvalidBagitFileFormatException;
-import gov.loc.repository.bagit.exceptions.MaliciousPathException;
-import gov.loc.repository.bagit.exceptions.UnparsableVersionException;
-import gov.loc.repository.bagit.exceptions.UnsupportedAlgorithmException;
-import gov.loc.repository.bagit.reader.BagReader;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -235,9 +234,8 @@ public class BagItUtilTest {
     assertEquals("data/alternateMets.xml", pathToMets);
     pathToBag = Paths.get("src/test/resources/bagit/", "twoMetsWithProfile");
     try {
-      BagReader reader = new BagReader();
-      bag = reader.read(pathToBag);
-    } catch (IOException | UnparsableVersionException | MaliciousPathException | UnsupportedAlgorithmException | InvalidBagitFileFormatException ex) {
+      bag = BagReader.read(pathToBag);
+    } catch (IOException | UnparsableVersionException | MaliciousPathException | InvalidBagitFileFormatException ex) {
       throw new BagItException(ex.getMessage());
     }
     try {
@@ -260,10 +258,9 @@ public class BagItUtilTest {
     String ocrdIdentifierOfBag = BagItUtil.getOcrdIdentifierOfBag(bag);
     assertEquals("bagForTest", ocrdIdentifierOfBag);
     pathToBag = Paths.get("src/test/resources/bagit/", "twoOcrdIdentifier");
-    BagReader reader = new BagReader();
     try {
-      bag = reader.read(pathToBag);
-    } catch (IOException | UnparsableVersionException | MaliciousPathException | UnsupportedAlgorithmException | InvalidBagitFileFormatException ex) {
+      bag = BagReader.read(pathToBag);
+    } catch (IOException | UnparsableVersionException | MaliciousPathException | InvalidBagitFileFormatException ex) {
       throw new BagItException(ex.getMessage());
     }
     try {

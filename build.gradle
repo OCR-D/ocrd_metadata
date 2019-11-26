@@ -55,11 +55,11 @@ dependencies {
     compile("org.fzk.ipe:Tools:1.6")
     compile("jaxen:jaxen:1.1.6")
     compile("org.jdom:jdom:1.1")
-  // bag it
-  compile("gov.loc:bagit:5.2.0")
+//  compile("gov.loc:bagit:5.2.0")
   // sub modules
   compile("edu.kit.ocrd:ocrd-workspace:0.2.0")
-//  compile("edu.kit.ocrd:bagging:${version}")
+  // bag it
+  compile("edu.kit.ocrd:bagging:${version}")
     
   compile("org.springframework.boot:spring-boot-starter-web")
   

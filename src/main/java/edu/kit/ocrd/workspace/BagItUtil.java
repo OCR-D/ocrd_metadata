@@ -15,31 +15,30 @@
  */
 package edu.kit.ocrd.workspace;
 
+import com.github.jscancella.conformance.BagLinter;
+import com.github.jscancella.domain.Bag;
+import com.github.jscancella.domain.Manifest;
+import com.github.jscancella.exceptions.CorruptChecksumException;
+import com.github.jscancella.exceptions.FileNotInPayloadDirectoryException;
+import com.github.jscancella.exceptions.InvalidBagitFileFormatException;
+import com.github.jscancella.exceptions.InvalidPayloadOxumException;
+import com.github.jscancella.exceptions.MaliciousPathException;
+import com.github.jscancella.exceptions.MissingBagitFileException;
+import com.github.jscancella.exceptions.MissingPayloadDirectoryException;
+import com.github.jscancella.exceptions.MissingPayloadManifestException;
+import com.github.jscancella.exceptions.PayloadOxumDoesNotExistException;
+import com.github.jscancella.exceptions.UnparsableVersionException;
+import com.github.jscancella.hash.BagitChecksumNameMapping;
+import com.github.jscancella.hash.Hasher;
+import com.github.jscancella.hash.StandardHasher;
+import com.github.jscancella.reader.BagReader;
+import com.github.jscancella.verify.BagVerifier;
+import com.github.jscancella.writer.BagWriter;
+import com.github.jscancella.writer.internal.BagCreator;
+import com.github.jscancella.writer.internal.CreateTagManifestsVistor;
+import com.github.jscancella.writer.internal.ManifestWriter;
+import com.github.jscancella.writer.internal.MetadataWriter;
 import edu.kit.ocrd.exception.BagItException;
-import gov.loc.repository.bagit.conformance.BagLinter;
-import gov.loc.repository.bagit.creator.BagCreator;
-import gov.loc.repository.bagit.creator.CreateTagManifestsVistor;
-import gov.loc.repository.bagit.domain.Bag;
-import gov.loc.repository.bagit.domain.Manifest;
-import gov.loc.repository.bagit.exceptions.CorruptChecksumException;
-import gov.loc.repository.bagit.exceptions.FileNotInPayloadDirectoryException;
-import gov.loc.repository.bagit.exceptions.InvalidBagitFileFormatException;
-import gov.loc.repository.bagit.exceptions.InvalidPayloadOxumException;
-import gov.loc.repository.bagit.exceptions.MaliciousPathException;
-import gov.loc.repository.bagit.exceptions.MissingBagitFileException;
-import gov.loc.repository.bagit.exceptions.MissingPayloadDirectoryException;
-import gov.loc.repository.bagit.exceptions.MissingPayloadManifestException;
-import gov.loc.repository.bagit.exceptions.UnparsableVersionException;
-import gov.loc.repository.bagit.exceptions.UnsupportedAlgorithmException;
-import gov.loc.repository.bagit.exceptions.VerificationException;
-import gov.loc.repository.bagit.hash.Hasher;
-import gov.loc.repository.bagit.hash.StandardSupportedAlgorithms;
-import gov.loc.repository.bagit.hash.SupportedAlgorithm;
-import gov.loc.repository.bagit.reader.BagReader;
-import gov.loc.repository.bagit.util.PathUtils;
-import gov.loc.repository.bagit.verify.BagVerifier;
-import gov.loc.repository.bagit.writer.BagWriter;
-import gov.loc.repository.bagit.writer.ManifestWriter;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -47,15 +46,16 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -123,14 +123,15 @@ public class BagItUtil {
     Bag bag = null;
     try {
       Path folder = Paths.get(payLoadPath.getAbsolutePath());
-      List<SupportedAlgorithm> algorithms = Arrays.asList(StandardSupportedAlgorithms.SHA512);
+      List<String> algorithms = Arrays.asList(StandardHasher.SHA512.getBagitAlgorithmName());
       boolean includeHiddenFiles = false;
       bag = BagCreator.bagInPlace(folder, algorithms, includeHiddenFiles);
       bag.getMetadata().add(X_OCRD_IDENTIFIER, ocrdIdentifier);
       bag.getMetadata().add(PROFILE_IDENTIFIER, PROFILE_IDENTIFIER_LOCATION);
       bag.getMetadata().add(X_OCRD_METS, METS_LOCATION_DEFAULT);
-      String softwareAgent = System.out.printf("BagItUtil %s from path '%s' with idenifier '%s'",
-              new BagItUtil().getClass().getPackage().getImplementationVersion(), payLoadPath.getPath(), ocrdIdentifier).toString();
+      bag.getMetadata().add(OCRD_MANIFESTATION, OCRD_MANIFESTATION_DEFAULT);
+      String softwareAgent = String.format("BagItUtil %s from path '%s' with identifier '%s'",
+              new BagItUtil().getClass().getPackage().getImplementationVersion(), payLoadPath.getPath(), ocrdIdentifier);
       bag.getMetadata().add(BAG_SOFTWARE_AGENT, softwareAgent);
       addTagDirectory(bag, pathToMetadataDir);
     } catch (NoSuchAlgorithmException | IOException ex) {
@@ -176,15 +177,14 @@ public class BagItUtil {
   public static Bag readBag(final Path pathToBag) throws BagItException {
     LOGGER.debug("Read BagIt...");
     Bag bag = null;
-    BagReader reader = new BagReader();
     try {
-      bag = reader.read(pathToBag);
-    } catch (IOException | UnparsableVersionException | MaliciousPathException | UnsupportedAlgorithmException | InvalidBagitFileFormatException ex) {
+      bag = BagReader.read(pathToBag);
+    } catch (IOException | UnparsableVersionException | MaliciousPathException | InvalidBagitFileFormatException ex) {
       LOGGER.error("Can't read Bag!", ex);
       throw new BagItException(ex.getMessage());
     }
     validateBagit(bag);
-    
+
     return bag;
   }
 
@@ -199,13 +199,11 @@ public class BagItUtil {
   public static boolean validateBagit(final Bag bag) throws BagItException {
     boolean valid = true;
     LOGGER.debug("Validate Bag!");
-    if (BagVerifier.canQuickVerify(bag)) {
-      try {
-        BagVerifier.quicklyVerify(bag);
-      } catch (IOException | InvalidPayloadOxumException ex) {
-        LOGGER.error("PayLoadOxum is invalid: ", ex);
-        throw new BagItException(ex.getMessage());
-      }
+    try {
+      BagVerifier.quicklyVerify(bag);
+    } catch (IOException | InvalidPayloadOxumException | PayloadOxumDoesNotExistException ex) {
+      LOGGER.error("PayLoadOxum is invalid: ", ex);
+      throw new BagItException(ex.getMessage());
     }
     /////////////////////////////////////////////////////////////////
     // Check for Profile and validate it
@@ -225,21 +223,18 @@ public class BagItUtil {
     // Verify completeness
     /////////////////////////////////////////////////////////////////
     boolean ignoreHiddenFiles = false;
-    BagVerifier verifierCompleteness = new BagVerifier();
     try {
-      verifierCompleteness.isComplete(bag, ignoreHiddenFiles);
-    } catch (IOException | MissingPayloadManifestException | MissingBagitFileException | MissingPayloadDirectoryException | FileNotInPayloadDirectoryException | InterruptedException | MaliciousPathException | UnsupportedAlgorithmException | InvalidBagitFileFormatException ex) {
+      BagVerifier.isComplete(bag, ignoreHiddenFiles);
+    } catch (IOException | MissingPayloadManifestException | MissingBagitFileException | MissingPayloadDirectoryException | FileNotInPayloadDirectoryException | MaliciousPathException | InvalidBagitFileFormatException ex) {
       LOGGER.error("Bag is not complete!", ex);
       throw new BagItException(ex.getMessage());
     }
     /////////////////////////////////////////////////////////////////
     // Verify validity
     /////////////////////////////////////////////////////////////////
-    BagVerifier verifierValidity = new BagVerifier();
-    
     try {
-      verifierValidity.isValid(bag, ignoreHiddenFiles);
-    } catch (IOException | MissingPayloadManifestException | MissingBagitFileException | MissingPayloadDirectoryException | FileNotInPayloadDirectoryException | InterruptedException | MaliciousPathException | CorruptChecksumException | VerificationException | UnsupportedAlgorithmException | InvalidBagitFileFormatException ex) {
+      BagVerifier.isValid(bag, ignoreHiddenFiles);
+    } catch (IOException | MissingPayloadManifestException | MissingBagitFileException | MissingPayloadDirectoryException | FileNotInPayloadDirectoryException | MaliciousPathException | CorruptChecksumException | InvalidBagitFileFormatException | NoSuchAlgorithmException ex) {
       LOGGER.error("Bag is not valid!", ex);
       throw new BagItException(ex.getMessage());
     }
@@ -318,49 +313,67 @@ public class BagItUtil {
    * @param tagDirectory directory to add.
    */
   public static void addTagDirectory(Bag bag, final File tagDirectory) throws NoSuchAlgorithmException, IOException {
+    Path bagitRootPath = bag.getRootDir();
     if (tagDirectory != null) {
-      Path bagitRootPath = bag.getRootDir();
-      boolean includeHiddenFiles = false;
-      List<SupportedAlgorithm> algorithms = new ArrayList<>();
-      for (Manifest manifest : bag.getPayLoadManifests()) {
-        algorithms.add(manifest.getAlgorithm());
-      }
-      final Map<Manifest, MessageDigest> tagFilesMap = Hasher.createManifestToMessageDigestMap(algorithms);
-      final CreateTagManifestsVistor tagVistor = new CreateTagManifestsVistor(tagFilesMap, includeHiddenFiles);
+      LOGGER.trace("addTagDir '{}' to bag '{}'", tagDirectory.getPath(), bag.getRootDir().toString());
       BagItUtil.copyFolder(tagDirectory, Paths.get(bagitRootPath.toString(), tagDirectory.getName()).toFile());
-      Files.walkFileTree(bagitRootPath, tagVistor);
-      // Remove all tagmanifest... files. They are not allowed in tagmanifest files.
-       for (Manifest key : tagFilesMap.keySet()) {
-        System.out.println(key);
-        Map<Path, String> newFileToChecksumMap = new HashMap<>();
-        Map<Path, String> fileToChecksumMap = key.getFileToChecksumMap();
-        for (Path item : fileToChecksumMap.keySet()) {
-          if (!item.toString().startsWith(Paths.get(bagitRootPath.toString(), "tagmanifest").toString())) {
-            newFileToChecksumMap.put(item, fileToChecksumMap.get(item));
-          }
-          key.setFileToChecksumMap(newFileToChecksumMap);
-        }
-        
-      }
-      bag.getTagManifests().addAll(tagFilesMap.keySet());
-      ManifestWriter.writeTagManifests(bag.getTagManifests(), PathUtils.getBagitDir(bag), bag.getRootDir(), bag.getFileEncoding());
     }
-    
+    boolean includeHiddenFiles = false;
+    List<String> algorithms = new ArrayList<>();
+    for (Manifest manifest : bag.getPayLoadManifests()) {
+      algorithms.add(manifest.getBagitAlgorithmName());
+    }
+    final Map<Manifest, Hasher> tagFilesMap = new ConcurrentHashMap<>();
+
+    for (final String algorithm : algorithms) {
+      final Manifest manifest = new Manifest(algorithm);
+      final Hasher hasher = BagitChecksumNameMapping.get(algorithm);
+      tagFilesMap.put(manifest, hasher);
+    }
+    final CreateTagManifestsVistor tagVistor = new CreateTagManifestsVistor(tagFilesMap, includeHiddenFiles);
+    Files.walkFileTree(bagitRootPath, tagVistor);
+    // Remove all tagmanifest... files. They are not allowed in tagmanifest files.
+    for (Manifest key : tagFilesMap.keySet()) {
+      Set<Path> removeFromFileToChecksumMap = new HashSet<>();
+      Map<Path, String> fileToChecksumMap = key.getFileToChecksumMap();
+      for (Path item : fileToChecksumMap.keySet()) {
+        if (item.toString().startsWith(Paths.get(bagitRootPath.toString(), "tagmanifest-").toString())) {
+          removeFromFileToChecksumMap.add(item);
+        }
+      }
+      for (Path removeItem : removeFromFileToChecksumMap) {
+        fileToChecksumMap.remove(removeItem);
+      }
+    }
+    bag.getTagManifests().addAll(tagFilesMap.keySet());
+    ManifestWriter.writePayloadManifests(bag.getPayLoadManifests(), bag.getRootDir(), bag.getRootDir(), bag.getFileEncoding());
+    MetadataWriter.writeBagMetadata(bag.getMetadata(), bag.getVersion(), bag.getRootDir(), bag.getFileEncoding());
+    ManifestWriter.writeTagManifests(bag.getTagManifests(), bag.getRootDir(), bag.getRootDir(), bag.getFileEncoding());
   }
+
+
 
   /**
    * This function recursively copy all the sub folder and files from
    * sourceFolder to destinationFolder
    *
    */
-  private static void copyFolder(File sourceFolder, File destinationFolder) throws IOException {
+/**
+ * Copy 'sourceFolder' recursively to 'destinationFolder'
+   * 
+   * @param sourceFolder Folder/File to copy
+   * @param destinationFolder Destination folder/file.
+   * @throws IOException Error reading/creating/writing files.
+   */
+private static void copyFolder(File sourceFolder, File destinationFolder) throws IOException {
+    LOGGER.debug("Copy folder '{}' to '{}'.", sourceFolder.getPath(), destinationFolder.getPath());
     //Check if sourceFolder is a directory or file
     //If sourceFolder is file; then copy the file directly to new location
     if (sourceFolder.isDirectory()) {
       //Verify if destinationFolder is already present; If not then create it
       if (!destinationFolder.exists()) {
         destinationFolder.mkdir();
-        System.out.println("Directory created :: " + destinationFolder);
+        LOGGER.trace("Directory created '{}'", destinationFolder.getPath());
       }
 
       //Get all files from source directory
@@ -377,8 +390,8 @@ public class BagItUtil {
     } else {
       //Copy the file content from one place to another 
       Files.copy(sourceFolder.toPath(), destinationFolder.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
-      System.out.println("File copied :: " + destinationFolder);
+      LOGGER.trace("File copied '{}'", destinationFolder.getPath());
     }
   }
-  
+
 }
