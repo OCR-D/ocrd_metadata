@@ -87,4 +87,10 @@ jacocoTestReport {
         fileTree(dir: it)
       })
   }
+
+  task copyDependencies(type: Copy) {
+   from configurations.compile
+   into 'dependencies'
+  } 
+  
 }
