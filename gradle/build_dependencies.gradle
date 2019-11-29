@@ -1,9 +1,13 @@
-/**Build the ocrd workspace validation library. 
+/**Build the bagit library. 
  * This dependeny is build after the service-base dependency has been built.
  * 
  */
 
 task buildBagitLibrary(type:Exec){
+   if (project.hasProperty('travis')) {
+      apply from: 'gradle/git_checkout.gradle'
+      dependsOn checkoutDependencies
+   }
 
   workingDir 'submodules/bagging'
   commandLine './gradlew', '-Pgroup=edu.kit.ocrd', '-Pversion=0.2.0', 'build', 'install'
