@@ -56,6 +56,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
+import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -316,7 +317,8 @@ public class BagItUtil {
     Path bagitRootPath = bag.getRootDir();
     if (tagDirectory != null) {
       LOGGER.trace("addTagDir '{}' to bag '{}'", tagDirectory.getPath(), bag.getRootDir().toString());
-      BagItUtil.copyFolder(tagDirectory, Paths.get(bagitRootPath.toString(), tagDirectory.getName()).toFile());
+
+      FileUtils.copyDirectory(tagDirectory, Paths.get(bagitRootPath.toString(), tagDirectory.getName()).toFile());
     }
     boolean includeHiddenFiles = false;
     List<String> algorithms = new ArrayList<>();
@@ -349,49 +351,6 @@ public class BagItUtil {
     ManifestWriter.writePayloadManifests(bag.getPayLoadManifests(), bag.getRootDir(), bag.getRootDir(), bag.getFileEncoding());
     MetadataWriter.writeBagMetadata(bag.getMetadata(), bag.getVersion(), bag.getRootDir(), bag.getFileEncoding());
     ManifestWriter.writeTagManifests(bag.getTagManifests(), bag.getRootDir(), bag.getRootDir(), bag.getFileEncoding());
-  }
-
-
-
-  /**
-   * This function recursively copy all the sub folder and files from
-   * sourceFolder to destinationFolder
-   *
-   */
-/**
- * Copy 'sourceFolder' recursively to 'destinationFolder'
-   * 
-   * @param sourceFolder Folder/File to copy
-   * @param destinationFolder Destination folder/file.
-   * @throws IOException Error reading/creating/writing files.
-   */
-private static void copyFolder(File sourceFolder, File destinationFolder) throws IOException {
-    LOGGER.debug("Copy folder '{}' to '{}'.", sourceFolder.getPath(), destinationFolder.getPath());
-    //Check if sourceFolder is a directory or file
-    //If sourceFolder is file; then copy the file directly to new location
-    if (sourceFolder.isDirectory()) {
-      //Verify if destinationFolder is already present; If not then create it
-      if (!destinationFolder.exists()) {
-        destinationFolder.mkdir();
-        LOGGER.trace("Directory created '{}'", destinationFolder.getPath());
-      }
-
-      //Get all files from source directory
-      String files[] = sourceFolder.list();
-
-      //Iterate over all files and copy them to destinationFolder one by one
-      for (String file : files) {
-        File srcFile = new File(sourceFolder, file);
-        File destFile = new File(destinationFolder, file);
-
-        //Recursive function call
-        copyFolder(srcFile, destFile);
-      }
-    } else {
-      //Copy the file content from one place to another 
-      Files.copy(sourceFolder.toPath(), destinationFolder.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
-      LOGGER.trace("File copied '{}'", destinationFolder.getPath());
-    }
   }
 
 }

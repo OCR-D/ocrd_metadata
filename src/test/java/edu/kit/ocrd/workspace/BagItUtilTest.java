@@ -20,12 +20,17 @@ import com.github.jscancella.exceptions.InvalidBagitFileFormatException;
 import com.github.jscancella.exceptions.MaliciousPathException;
 import com.github.jscancella.exceptions.UnparsableVersionException;
 import com.github.jscancella.reader.BagReader;
+import com.github.jscancella.writer.BagWriter;
 import edu.kit.ocrd.exception.BagItException;
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.NoSuchAlgorithmException;
+import java.util.Iterator;
+import java.util.List;
 import java.util.stream.Stream;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
@@ -91,6 +96,88 @@ public class BagItUtilTest {
       assertTrue(true);
     } catch (BagItException bie) {
       assertTrue(false);
+    }
+    FileUtils.deleteDirectory(testDir);
+  }
+
+  /**
+   * Test of buildBag method, of class BagItUtil.
+   */
+  @Test
+  public void testBuildBag2() throws IOException, NoSuchAlgorithmException {
+    System.out.println("buildBagWithMetadataDir");
+    File testDir = new File("src/test/resources/bagit/test");
+    File writeDir = new File("src/test/resources/bagit/write");
+    File metadataDir = new File("src/test/resources/provenance");
+    File srcDir = new File("src/test/resources/bagit/data");
+    FileUtils.copyDirectory(srcDir, testDir);
+    try {
+      Bag result = BagItUtil.buildBag(testDir, metadataDir, "anyIdentifier");
+      BagWriter.write(result, writeDir.toPath());
+      Stream<Path> list = Files.list(writeDir.toPath());
+      assertTrue(Paths.get(writeDir.getAbsolutePath(), "tagmanifest-sha512.txt").toFile().exists());
+      assertEquals(6, list.count());
+      List<String> readLines = FileUtils.readLines(Paths.get(writeDir.getAbsolutePath(), "tagmanifest-sha512.txt").toFile(), Charset.defaultCharset());
+      assertEquals(6, readLines.size());
+      boolean valid = false;
+      for (String line: readLines) {
+        if (line.contains("bagit.txt"))
+          valid = true;
+      }
+      assertTrue(valid);
+      valid = false;
+      for (String line: readLines) {
+        if (line.contains("bag-info.txt"))
+          valid = true;
+      }
+      assertTrue(valid);
+      valid = false;
+      for (String line: readLines) {
+        if (line.contains("manifest-sha512.txt"))
+          valid = true;
+      }
+      assertTrue(valid);
+      valid = false;
+      for (String line: readLines) {
+        if (line.contains("invalid_date_ocrd_provenance.xml"))
+          valid = true;
+      }
+      assertTrue(valid);
+      valid = false;
+      for (String line: readLines) {
+        if (line.contains("mets.xml"))
+          valid = true;
+      }
+      assertTrue(valid);
+      valid = false;
+      for (String line: readLines) {
+        if (line.contains("ocrd_provenance.xml"))
+          valid = true;
+      }
+      assertTrue(valid);
+      assertTrue(BagItUtil.validateBagit(result));
+    } catch (BagItException bie) {
+      assertTrue(false);
+    }
+    FileUtils.deleteDirectory(testDir);
+    FileUtils.deleteDirectory(writeDir);
+  }
+
+  /**
+   * Test of buildBag method, of class BagItUtil.
+   */
+  @Test
+  public void testBuildBag3() throws IOException {
+    System.out.println("buildBagWithInvalidMetadataDir");
+    File testDir = new File("src/test/resources/bagit/test");
+    File metadataDir = new File("src/test/resources/notExists");
+    File srcDir = new File("src/test/resources/bagit/data");
+    FileUtils.copyDirectory(srcDir, testDir);
+    try {
+      Bag result = BagItUtil.buildBag(testDir, metadataDir, "anyIdentifier");
+      assertTrue(false);
+    } catch (BagItException bie) {
+      assertTrue(bie.getMessage().contains("src/test/resources/notExists"));
     }
     FileUtils.deleteDirectory(testDir);
   }
