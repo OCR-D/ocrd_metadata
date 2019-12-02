@@ -10,7 +10,7 @@ task buildBagitLibrary(type:Exec){
    }
 
   workingDir 'submodules/bagging'
-  commandLine './gradlew', '-Pgroup=edu.kit.ocrd', '-Pversion=${project.version}', 'build', 'install'
+  commandLine './gradlew', '-Pgroup=edu.kit.ocrd', '-Pversion=0.2.0', 'build', 'install'
 
    standardOutput = new ByteArrayOutputStream()
 
