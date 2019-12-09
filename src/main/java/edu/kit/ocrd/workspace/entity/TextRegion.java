@@ -13,18 +13,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.kit.ocrd.dao;
+package edu.kit.ocrd.workspace.entity;
 
-import java.util.List;
+import org.springframework.data.annotation.Id;
+
+import com.arangodb.springframework.annotation.Document;
+import com.arangodb.springframework.annotation.HashIndex;
 
 /**
- * Contains all metadata of a single page.
+ * Contains one text region of one page.
  */
-public class TextRegion {
-   /**
+@Document("sectionDocument")
+@HashIndex(fields = {"resourceId"})
+public class TextRegion implements IBaseEntity {
+
+  /**
+   * ID of the document.
+   */
+  @Id
+  private String id;
+
+  /**
     * Resource ID of METS document.
     */
    private String resourceId;
+  /**
+   * Version of the document. (Start with version 1 increment version number.)
+   */
+  private Integer version;
    /**
     * Order of the page.
     */
@@ -53,6 +69,47 @@ public class TextRegion {
    * Confidence level of given text.
    */
   private float confidence;
+
+
+  @Override
+  public String getId() {
+    return id;
+  }
+
+  @Override
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  /**
+   * Get resource ID of METS document.
+   * 
+   * @return the resourceId
+   */
+  @Override
+  public String getResourceId() {
+    return resourceId;
+  }
+
+  /**
+   * Set resource ID of METS document.
+   * 
+   * @param resourceId the resourceId to set
+   */
+  @Override
+  public void setResourceId(String resourceId) {
+    this.resourceId = resourceId;
+  }
+
+  @Override
+  public Integer getVersion() {
+    return version;
+  }
+
+  @Override
+  public void setVersion(Integer version) {
+    this.version = version;
+  }
 
   /**
    * Get order of the page.
@@ -148,24 +205,6 @@ public class TextRegion {
    */
   public void setConfidence(float confidence) {
     this.confidence = confidence;
-  }
-
-  /**
-   * Get resource ID of METS document.
-   * 
-   * @return the resourceId
-   */
-  public String getResourceId() {
-    return resourceId;
-  }
-
-  /**
-   * Set resource ID of METS document.
-   * 
-   * @param resourceId the resourceId to set
-   */
-  public void setResourceId(String resourceId) {
-    this.resourceId = resourceId;
   }
    @Override
   public String toString() {

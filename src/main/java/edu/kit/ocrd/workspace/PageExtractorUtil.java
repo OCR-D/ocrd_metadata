@@ -15,9 +15,7 @@
  */
 package edu.kit.ocrd.workspace;
 
-import edu.kit.ocrd.dao.TextRegion;
-import static edu.kit.ocrd.workspace.entity.GroundTruthProperties.values;
-import edu.kit.ocrd.workspace.exception.WorkspaceException;
+import edu.kit.ocrd.workspace.entity.TextRegion;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -41,7 +39,7 @@ public class PageExtractorUtil extends PageUtil {
   private static final Logger LOGGER = LoggerFactory.getLogger(PageExtractorUtil.class);
 
   /**
-   * Extract MetsFile instances from METS document.
+   * Extract text equivalents from text regions of PAGE document.
    *
    * @param metsFile Mets file
    * @param resourceId Resource ID of METS document.
@@ -49,7 +47,6 @@ public class PageExtractorUtil extends PageUtil {
    * @return List with all found files.
    */
   public static List<TextRegion> extractAllTextRegions(final File metsFile, String resourceId) throws Exception {
-    boolean valid = false;
     List<TextRegion> textRegions = new ArrayList<>();
     Document metsDocument = JaxenUtil.getDocument(metsFile);
     List<String> pageUrls = MetsDocumentUtil.extractPageUrls(metsDocument);
@@ -64,7 +61,7 @@ public class PageExtractorUtil extends PageUtil {
   }
 
   /**
-   * Extract MetsFile instances from METS document.
+   * Extract text equivalents from text regions of PAGE document.
    *
    * @param basePath Path to workspace.
    * @param pageUrl 'URL' of page file (relative path to base path).

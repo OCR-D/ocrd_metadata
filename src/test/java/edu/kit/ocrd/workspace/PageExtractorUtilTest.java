@@ -5,7 +5,7 @@
  */
 package edu.kit.ocrd.workspace;
 
-import edu.kit.ocrd.dao.TextRegion;
+import edu.kit.ocrd.workspace.entity.TextRegion;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;

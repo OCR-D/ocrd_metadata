@@ -15,6 +15,7 @@
  */
 package edu.kit.ocrd.dao;
 
+import edu.kit.ocrd.workspace.entity.TextRegion;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
