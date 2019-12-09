@@ -167,6 +167,7 @@ public class TextRegion {
   public void setResourceId(String resourceId) {
     this.resourceId = resourceId;
   }
+   @Override
   public String toString() {
     String buffer = String.format("Resource ID: '%s', PageUrl: '%s', ImageUrl: '%s', Region ID: '%s', Order: '%s', Confidence Level: '%s', Text: '%s'", 
             resourceId, pageUrl, imageUrl, region, order, confidence, text);

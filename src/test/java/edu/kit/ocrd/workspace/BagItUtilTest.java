@@ -86,7 +86,7 @@ public class BagItUtilTest {
   @Test
   public void testBuildBag1() throws IOException {
     System.out.println("buildBag");
-    File testDir = new File("src/test/resources/bagit/test");
+    File testDir = Files.createTempDirectory("testBag1_").toFile();
     File srcDir = new File("src/test/resources/bagit/data");
     FileUtils.copyDirectory(srcDir, testDir);
     try {
@@ -106,18 +106,17 @@ public class BagItUtilTest {
   @Test
   public void testBuildBag2() throws IOException, NoSuchAlgorithmException {
     System.out.println("buildBagWithMetadataDir");
-    File testDir = new File("src/test/resources/bagit/test");
-    File writeDir = new File("src/test/resources/bagit/write");
+    File testDir = Files.createTempDirectory("testBag2_").toFile();
     File metadataDir = new File("src/test/resources/provenance");
     File srcDir = new File("src/test/resources/bagit/data");
     FileUtils.copyDirectory(srcDir, testDir);
     try {
       Bag result = BagItUtil.buildBag(testDir, metadataDir, "anyIdentifier");
-      BagWriter.write(result, writeDir.toPath());
-      Stream<Path> list = Files.list(writeDir.toPath());
-      assertTrue(Paths.get(writeDir.getAbsolutePath(), "tagmanifest-sha512.txt").toFile().exists());
+      BagWriter.write(result, testDir.toPath());
+      Stream<Path> list = Files.list(testDir.toPath());
+      assertTrue(Paths.get(testDir.getAbsolutePath(), "tagmanifest-sha512.txt").toFile().exists());
       assertEquals(6, list.count());
-      List<String> readLines = FileUtils.readLines(Paths.get(writeDir.getAbsolutePath(), "tagmanifest-sha512.txt").toFile(), Charset.defaultCharset());
+      List<String> readLines = FileUtils.readLines(Paths.get(testDir.getAbsolutePath(), "tagmanifest-sha512.txt").toFile(), Charset.defaultCharset());
       assertEquals(6, readLines.size());
       boolean valid = false;
       for (String line: readLines) {
@@ -157,10 +156,9 @@ public class BagItUtilTest {
       assertTrue(valid);
       assertTrue(BagItUtil.validateBagit(result));
     } catch (BagItException bie) {
-      assertTrue(false);
+      assertEquals("Unexpected Error", bie.getMessage());
     }
     FileUtils.deleteDirectory(testDir);
-    FileUtils.deleteDirectory(writeDir);
   }
 
   /**
@@ -169,7 +167,7 @@ public class BagItUtilTest {
   @Test
   public void testBuildBag3() throws IOException {
     System.out.println("buildBagWithInvalidMetadataDir");
-    File testDir = new File("src/test/resources/bagit/test");
+    File testDir = Files.createTempDirectory("testBag3_").toFile();
     File metadataDir = new File("src/test/resources/notExists");
     File srcDir = new File("src/test/resources/bagit/data");
     FileUtils.copyDirectory(srcDir, testDir);

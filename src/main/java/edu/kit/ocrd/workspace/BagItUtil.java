@@ -43,6 +43,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -56,6 +57,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Stream;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -347,6 +349,9 @@ public class BagItUtil {
         fileToChecksumMap.remove(removeItem);
       }
     }
+    // Clear existing tag manifests first.
+    bag.getTagManifests().clear();
+    // Add the new ones.
     bag.getTagManifests().addAll(tagFilesMap.keySet());
     ManifestWriter.writePayloadManifests(bag.getPayLoadManifests(), bag.getRootDir(), bag.getRootDir(), bag.getFileEncoding());
     MetadataWriter.writeBagMetadata(bag.getMetadata(), bag.getVersion(), bag.getRootDir(), bag.getFileEncoding());
