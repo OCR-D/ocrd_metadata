@@ -28,7 +28,7 @@ import org.springframework.data.annotation.Id;
  * </ul><p>
  */
 @Document("provenanceMetadata")
-@HashIndex(fields = {"resourceId", "workflowId"})
+@HashIndex(fields = {"resourceId", "workflowId", "startProcessor"})
 public final class ProvenanceMetadata {
 
   /**
@@ -255,6 +255,7 @@ public final class ProvenanceMetadata {
     this.outputFileGrps = outputFileGrps;
   }
 
+  @Override
   public Object clone() {
     ProvenanceMetadata provMd = new ProvenanceMetadata();
 
