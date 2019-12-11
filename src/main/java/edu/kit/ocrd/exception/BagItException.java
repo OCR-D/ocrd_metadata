@@ -15,6 +15,8 @@
  */
 package edu.kit.ocrd.exception;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
@@ -23,6 +25,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  */
 @ResponseStatus(value = HttpStatus.BAD_REQUEST)
 public class BagItException extends RuntimeException {
+
+  /**
+   * Logger.
+   */
+  private static final Logger LOGGER = LoggerFactory.getLogger(BagItException.class);
 
   /**
    * Default constructor.
@@ -39,6 +46,7 @@ public class BagItException extends RuntimeException {
    */
   public BagItException(String message, Throwable cause) {
     super(message, cause);
+    LOGGER.debug(message);
   }
 
   /**
@@ -48,6 +56,7 @@ public class BagItException extends RuntimeException {
    */
   public BagItException(String message) {
     super(message);
+    LOGGER.debug(message);
   }
 
   /**

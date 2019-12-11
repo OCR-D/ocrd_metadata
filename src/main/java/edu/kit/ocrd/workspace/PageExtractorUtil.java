@@ -102,7 +102,6 @@ public class PageExtractorUtil extends PageUtil {
         textRegion.setConfidence(Float.parseFloat(confidenceLevel));
         textRegion.setText(text);
         textRegions.add(textRegion);
-        System.out.println(textRegion);
       } 
     }
     return textRegions;
