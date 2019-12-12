@@ -16,6 +16,13 @@
 package edu.kit.ocrd.workspace;
 
 import com.github.jscancella.conformance.BagLinter;
+import com.github.jscancella.conformance.exceptions.BagitVersionIsNotAcceptableException;
+import com.github.jscancella.conformance.exceptions.FetchFileNotAllowedException;
+import com.github.jscancella.conformance.exceptions.MetatdataValueIsNotAcceptableException;
+import com.github.jscancella.conformance.exceptions.MetatdataValueIsNotRepeatableException;
+import com.github.jscancella.conformance.exceptions.RequiredManifestNotPresentException;
+import com.github.jscancella.conformance.exceptions.RequiredMetadataFieldNotPresentException;
+import com.github.jscancella.conformance.exceptions.RequiredTagFileNotPresentException;
 import com.github.jscancella.domain.Bag;
 import com.github.jscancella.domain.Manifest;
 import com.github.jscancella.exceptions.CorruptChecksumException;
@@ -215,7 +222,7 @@ public class BagItUtil {
         InputStream inputStream4Profile = new URL(profileIterator.next()).openStream();
         BagLinter.checkAgainstProfile(inputStream4Profile, bag);
       }
-    } catch (Exception ex) {
+    } catch (BagitVersionIsNotAcceptableException | FetchFileNotAllowedException | MetatdataValueIsNotAcceptableException | MetatdataValueIsNotRepeatableException | RequiredManifestNotPresentException | RequiredMetadataFieldNotPresentException | RequiredTagFileNotPresentException | IOException ex) {
       LOGGER.error("Container does not match the defined profile!", ex);
       throw new BagItException(ex.getMessage());
     }
@@ -305,12 +312,13 @@ public class BagItUtil {
   }
 
   /**
-   * Add a directory to bag as tag directory.
+   * Add a directory to bag as tag directory.Copy directory in bag.
    *
-   * Copy directory in bag.
    *
    * @param bag Bag
    * @param tagDirectory directory to add.
+   * @throws java.security.NoSuchAlgorithmException Unsupported algorithm for checksum
+   * @throws java.io.IOException Error reading/writing on disc.
    */
   public static void addTagDirectory(Bag bag, final File tagDirectory) throws NoSuchAlgorithmException, IOException {
     Path bagitRootPath = bag.getRootDir();

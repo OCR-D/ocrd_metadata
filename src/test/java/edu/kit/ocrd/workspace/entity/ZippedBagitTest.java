@@ -15,7 +15,6 @@
  */
 package edu.kit.ocrd.workspace.entity;
 
-import edu.kit.ocrd.workspace.entity.ZippedBagit;
 import java.util.Date;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -29,13 +28,13 @@ import static org.junit.Assert.*;
  */
 public class ZippedBagitTest {
 
-    private String id = "id";
-    private String resourceId = "resourceId";
-    private String ocrdIdentifier = "ocrdIdentifier";
-    private Integer version = 1;
-    private Date uploadDate = new Date();
-    private Boolean latest = Boolean.TRUE;
-    private String url = "http://any.valid.url/test";
+    private final String id = "id";
+    private final String resourceId = "resourceId";
+    private final String ocrdIdentifier = "ocrdIdentifier";
+    private final Integer version = 1;
+    private final Date uploadDate = new Date();
+    private final Boolean latest = Boolean.TRUE;
+    private final String url = "http://any.valid.url/test";
 
     public ZippedBagitTest() {
     }
@@ -210,7 +209,7 @@ public class ZippedBagitTest {
         Integer expResult = 1;
         Integer result = instance.getVersion();
         assertEquals(expResult, result);
-        expResult = new Integer(3);
+        expResult = 3;
         instance.setVersion(expResult);
         result = instance.getVersion();
         assertEquals(expResult, result);

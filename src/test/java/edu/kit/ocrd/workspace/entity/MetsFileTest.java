@@ -15,7 +15,6 @@
  */
 package edu.kit.ocrd.workspace.entity;
 
-import edu.kit.ocrd.workspace.entity.MetsFile;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -137,7 +136,7 @@ public class MetsFileTest {
     assertNull(metsFile.getPageId());
     assertNull(metsFile.getUse());
     assertNull(metsFile.getUrl());
-    assertTrue(metsFile.toString().contains("version=" + version.intValue()));
+    assertTrue(metsFile.toString().contains("version=" + version));
   }
 
   @Test
@@ -249,7 +248,7 @@ public class MetsFileTest {
     assertTrue(metsFile.getUrl().equals(url));
     assertTrue(metsFile.toString().contains(url));
     // New version
-    Integer version2 = new Integer(version + 1);
+    Integer version2 = version + 1;
     assertNull(metsFile2.getId());
     assertTrue(metsFile2.getCurrent());
     assertTrue(metsFile2.toString().contains("null"));
