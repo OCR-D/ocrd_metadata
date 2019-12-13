@@ -26,7 +26,7 @@ task buildBagitLibrary(type:Exec){
 task buildOcrdWorkspace(type:Exec){
   dependsOn buildBagitLibrary
   workingDir 'submodules/ocrd_workspace'
-  commandLine './gradlew', 'build', 'install'
+  commandLine './gradlew', 'build', 'publishToMavenLocal'
 
    standardOutput = new ByteArrayOutputStream()
 

@@ -23,9 +23,9 @@ description = 'Tools for extracting metadata from OCR-D bagIt container/workspac
 group = 'edu.kit.ocrd'
 version = '0.2.0'
 
+println "Building ${name} version: ${version}"
+
 jar {
-  archiveBaseName = 'ocrd-metadata'
-  archiveVersion =  '0.2.0'
   enabled = true
 }
 bootJar {
@@ -62,6 +62,7 @@ dependencies {
   implementation "edu.kit.ocrd:bagging:${version}"
     
   implementation "org.springframework.boot:spring-boot-starter-web"
+  implementation "commons-io:commons-io:2.5"
   
   
   // ArangoDB
@@ -89,8 +90,15 @@ jacocoTestReport {
   }
 }
 
-
 tasks.withType(JavaCompile) {
   options.compilerArgs << '-Xlint:deprecation'
   options.deprecation = true
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
