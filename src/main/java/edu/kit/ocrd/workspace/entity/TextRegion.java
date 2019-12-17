@@ -44,7 +44,7 @@ public class TextRegion implements IBaseEntity {
    /**
     * Order of the page.
     */
-   private String order;
+   private Integer order;
    
   /** 
    * image URL of the referenced image inside page.xml.
@@ -115,7 +115,7 @@ public class TextRegion implements IBaseEntity {
    * Get order of the page.
    * @return the order
    */
-  public String getOrder() {
+  public Integer getOrder() {
     return order;
   }
 
@@ -123,7 +123,7 @@ public class TextRegion implements IBaseEntity {
    * Set order of the page.
    * @param order the order to set
    */
-  public void setOrder(String order) {
+  public void setOrder(Integer order) {
     this.order = order;
   }
 

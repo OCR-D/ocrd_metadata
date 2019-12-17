@@ -93,9 +93,9 @@ public class TextRegionTest {
   public void testSetAndGetOrder() {
     System.out.println("getOrder");
     TextRegion instance = new TextRegion();
-    String result = instance.getOrder();
+    Integer result = instance.getOrder();
     assertNull(result);
-    String expResult = "order";
+    Integer expResult = 123;
     instance.setOrder(expResult);
     result = instance.getOrder();
     assertEquals(expResult, result);
@@ -194,7 +194,7 @@ public class TextRegionTest {
   public void testToString() {
     System.out.println("toString");
     float confLevel = 0.7f;
-    String order = "5";
+    Integer order = 5;
     String region = "myRegion";
     String page = "myPage";
     String image = "myImage";
@@ -204,7 +204,7 @@ public class TextRegionTest {
     instance.setConfidence(confLevel);
     String result = instance.toString();
     assertTrue(result.contains(Float.toString(confLevel)));
-    assertFalse(result.contains(order));
+    assertFalse(result.contains(order.toString()));
     assertFalse(result.contains(region));
     assertFalse(result.contains(page));
     assertFalse(result.contains(image));
@@ -213,7 +213,7 @@ public class TextRegionTest {
     instance.setOrder(order);
     result = instance.toString();
     assertTrue(result.contains(Float.toString(confLevel)));
-    assertTrue(result.contains(order));
+    assertTrue(result.contains(order.toString()));
     assertFalse(result.contains(region));
     assertFalse(result.contains(page));
     assertFalse(result.contains(image));
@@ -222,7 +222,7 @@ public class TextRegionTest {
     instance.setRegion(region);
     result = instance.toString();
     assertTrue(result.contains(Float.toString(confLevel)));
-    assertTrue(result.contains(order));
+    assertTrue(result.contains(order.toString()));
     assertTrue(result.contains(region));
     assertFalse(result.contains(page));
     assertFalse(result.contains(image));
@@ -231,7 +231,7 @@ public class TextRegionTest {
     instance.setPageUrl(page);
     result = instance.toString();
     assertTrue(result.contains(Float.toString(confLevel)));
-    assertTrue(result.contains(order));
+    assertTrue(result.contains(order.toString()));
     assertTrue(result.contains(region));
     assertTrue(result.contains(page));
     assertFalse(result.contains(image));
@@ -240,7 +240,7 @@ public class TextRegionTest {
     instance.setImageUrl(image);
     result = instance.toString();
     assertTrue(result.contains(Float.toString(confLevel)));
-    assertTrue(result.contains(order));
+    assertTrue(result.contains(order.toString()));
     assertTrue(result.contains(region));
     assertTrue(result.contains(page));
     assertTrue(result.contains(image));
@@ -249,7 +249,7 @@ public class TextRegionTest {
     instance.setResourceId(resource);
     result = instance.toString();
     assertTrue(result.contains(Float.toString(confLevel)));
-    assertTrue(result.contains(order));
+    assertTrue(result.contains(order.toString()));
     assertTrue(result.contains(region));
     assertTrue(result.contains(page));
     assertTrue(result.contains(image));
@@ -259,7 +259,7 @@ public class TextRegionTest {
     instance.setText(text);
     result = instance.toString();
     assertTrue(result.contains(Float.toString(confLevel)));
-    assertTrue(result.contains(order));
+    assertTrue(result.contains(order.toString()));
     assertTrue(result.contains(region));
     assertTrue(result.contains(page));
     assertTrue(result.contains(image));
