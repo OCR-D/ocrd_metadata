@@ -264,7 +264,7 @@ public class MetsDocumentUtil extends MetsUtil {
           String dmdId = getAttribute(pageNode, "DMDID");
           String[] features = JaxenUtil.getValues(root, "//mets:dmdSec[@ID='" + dmdId + "']/mets:mdWrap[@OTHERMDTYPE='GT']/mets:xmlData/gt:gt/gt:state/@prop", getNamespaces());
           for (String feature : features) {
-            pageMetadataList.add(new PageMetadata(resourceId, order, id, GroundTruthProperties.get(feature)));
+            pageMetadataList.add(new PageMetadata(resourceId, Integer.getInteger(order), id, GroundTruthProperties.get(feature)));
           }
         }
       }

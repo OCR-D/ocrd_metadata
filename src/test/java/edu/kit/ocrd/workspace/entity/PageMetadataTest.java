@@ -36,7 +36,7 @@ public class PageMetadataTest {
 
   String id = "id";
   GroundTruthProperties feature = GroundTruthProperties.FEATURES;
-  String order = "order";
+  Integer order = 123;
   String pageId = "pageId";
   String resourceId = "resourceId";
 
@@ -105,9 +105,9 @@ public class PageMetadataTest {
   public void testSetAndGetOrder() {
     System.out.println("set and getOrder");
     PageMetadata instance = new PageMetadata();
-    String expResult = order;
+    Integer expResult = order;
     instance.setOrder(order);
-    String result = instance.getOrder();
+    Integer result = instance.getOrder();
     assertEquals(expResult, result);
   }
 
@@ -158,10 +158,10 @@ public class PageMetadataTest {
     assertTrue(pageMdList.size() == 20);
     PageMetadata pmd = pageMdList.get(19);
     assertEquals(pmd.getResourceId(), resourceId);
-    assertEquals(pmd.getOrder(),"2");
+    assertEquals(pmd.getOrder(),Integer.getInteger("2"));
     assertEquals(pmd.getPageId(), "phys_0002");
     assertEquals(pmd.getFeature(),GroundTruthProperties.UNEVEN_ILLUMINATION);
-    assertEquals(pmd.getOrder(),"2");
+    assertEquals(pmd.getOrder(),Integer.getInteger("2"));
   }
 
 }

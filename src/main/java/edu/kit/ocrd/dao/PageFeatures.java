@@ -24,7 +24,7 @@ public class PageFeatures {
    /**
     * Order of the page.
     */
-   private String order;
+   private Integer order;
    
   /** 
    * PAGEID of the page.
@@ -44,7 +44,7 @@ public class PageFeatures {
    * Get Order of the page.
    * @return the order
    */
-  public String getOrder() {
+  public Integer getOrder() {
     return order;
   }
 
@@ -52,7 +52,7 @@ public class PageFeatures {
    * Set Order of the page.
    * @param order the order to set
    */
-  public void setOrder(String order) {
+  public void setOrder(Integer order) {
     this.order = order;
   }
 

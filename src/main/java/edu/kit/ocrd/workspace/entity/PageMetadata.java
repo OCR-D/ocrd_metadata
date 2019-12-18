@@ -45,7 +45,7 @@ public class PageMetadata {
   /**
    * Order of the page.
    */
-  private String order;
+  private Integer order;
   /**
    * PAGEID of the page. 
    */
@@ -71,7 +71,7 @@ public class PageMetadata {
    * @param pageId ID of the page.
    * @param feature One Feature of the page.
    */
-  public PageMetadata(final String resourceId,final String order,  
+  public PageMetadata(final String resourceId,final Integer order,  
           final String pageId, final GroundTruthProperties feature) {
     super();
     this.resourceId = resourceId;
@@ -132,7 +132,7 @@ public class PageMetadata {
    * 
    * @return the order
    */
-  public String getOrder() {
+  public Integer getOrder() {
     return order;
   }
 
@@ -141,7 +141,7 @@ public class PageMetadata {
    * 
    * @param order the order to set
    */
-  public void setOrder(String order) {
+  public void setOrder(Integer order) {
     this.order = order;
   }
 

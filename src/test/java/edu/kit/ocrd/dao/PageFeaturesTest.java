@@ -56,9 +56,9 @@ public class PageFeaturesTest {
   public void testSetAndGetOrder() {
     System.out.println("getOrder");
     PageFeatures instance = new PageFeatures();
-    String expResult = "order";
+    Integer expResult = 123;
     instance.setOrder(expResult);
-    String result = instance.getOrder();
+    Integer result = instance.getOrder();
     assertEquals(expResult, result);
     assertNull(instance.getFeatures());
     assertEquals(0, instance.getNoOfImages());
