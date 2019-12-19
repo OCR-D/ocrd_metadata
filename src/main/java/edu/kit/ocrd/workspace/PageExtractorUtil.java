@@ -97,7 +97,7 @@ public class PageExtractorUtil extends PageUtil {
         textRegion.setResourceId(resourceId);
         textRegion.setPageUrl(pageUrl);
         textRegion.setImageUrl(imageUrl);
-        textRegion.setOrder(Integer.getInteger(order));
+        textRegion.setOrder(new Integer(order));
         textRegion.setRegion(regionId);
         textRegion.setConfidence(Float.parseFloat(confidenceLevel));
         textRegion.setText(text);

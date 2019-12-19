@@ -72,14 +72,20 @@ public class PageExtractorUtilTest {
   @Test
   public void testExtractTextRegions() throws Exception {
     System.out.println("extractTextRegions");
-//    Path basePath = Paths.get("src/test/resources/text/");
-//    String pageUrl = "";
-//    String resourceId = "";
-//    List<TextRegion> expResult = null;
-//    List<TextRegion> result = PageExtractorUtil.extractTextRegions(basePath, pageUrl, resourceId);
-//    assertEquals(expResult, result);
-//    // TODO review the generated test code and remove the default call to fail.
-//    fail("The test case is a prototype.");
+    File metsFile = new File("src/test/resources/all/data/mets.xml");
+    assertTrue("File exists!", metsFile.exists());
+    String resourceId = "OnlyForTests";
+    List<TextRegion> result = PageExtractorUtil.extractAllTextRegions(metsFile, resourceId);
+    assertEquals(5, result.size());
+    for (TextRegion pmd : result) {
+      assertTrue(pmd.getOrder() >= 0);
+      assertTrue(pmd.getOrder() < 5);
+      assertEquals("region000" + pmd.getOrder().toString(), pmd.getRegion());
+      assertTrue(pmd.getPageUrl().startsWith("OCR-D-OCR-"));
+      assertEquals("OCR-D-IMG/OCR-D-IMG_0001.jpg", pmd.getImageUrl());
+      assertEquals(resourceId, pmd.getResourceId());
+      assertNull(pmd.getVersion());
+    }
   }
 
   /**
