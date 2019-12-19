@@ -59,7 +59,7 @@ dependencies {
   // sub modules
   implementation "edu.kit.ocrd:ocrd-workspace:0.2.0"
   // bag it
-  implementation "edu.kit.ocrd:bagging:${version}"
+  implementation "edu.kit.ocrd:bagging:0.2.0"
     
   implementation "org.springframework.boot:spring-boot-starter-web"
   implementation "commons-io:commons-io:2.5"
