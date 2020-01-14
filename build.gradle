@@ -21,7 +21,7 @@ apply plugin: 'maven-publish'
 
 description = 'Tools for extracting metadata from OCR-D bagIt container/workspace.'
 group = 'edu.kit.ocrd'
-version = '0.3.0'
+version = '0.4.0'
 
 println "Building ${name} version: ${version}"
 

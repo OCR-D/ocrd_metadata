@@ -71,22 +71,17 @@ public class ProvenanceUtil {
    * All entities of type 'ocrd:parameter__file'.
    */
   Map<String, ProvenanceEntity> parameterFileEntities;
-  /**
-   * Map linking fileID to groupID.
-   */
-  Map<String, String> mapID2Group;
 
   private ProvenanceUtil(final Document provDocument, final Document metsDocument) {
     this.provDocument = provDocument;
     this.metsDocument = metsDocument;
     processorActivities = extractActivities("ocrd:processor");
-    referencedFileEntities = extractEntities("ocrd:mets__referencedFile");
+    referencedFileEntities = extractEntities("ocrd:mets__referencedFileGroup");
     parameterFileEntities = extractEntities("ocrd:parameter__file");
     List<String> allFileIds = new ArrayList<>();
     for (ProvenanceEntity item : referencedFileEntities.values()) {
       allFileIds.add(item.getValue());
     }
-    mapID2Group = createMapID2Group(allFileIds);
   }
 
   /**
@@ -148,7 +143,7 @@ public class ProvenanceUtil {
       for (String fileId : usedIds) {
         ProvenanceEntity referencedFile = referencedFileEntities.get(fileId);
         if (referencedFile != null) {
-          inputGroups.add(mapID2Group.get(referencedFile.getValue()));
+          inputGroups.add(referencedFile.getValue());
         }
       }
       processorMetadata.setInputFileGrps(inputGroups.toString());
@@ -158,7 +153,7 @@ public class ProvenanceUtil {
       for (String fileId : wasGeneratedIds) {
         ProvenanceEntity referencedFile = referencedFileEntities.get(fileId);
         if (referencedFile != null) {
-          outputGroups.add(mapID2Group.get(referencedFile.getValue()));
+          outputGroups.add(referencedFile.getValue());
         }
       }
       processorMetadata.setOutputFileGrps(outputGroups.toString());

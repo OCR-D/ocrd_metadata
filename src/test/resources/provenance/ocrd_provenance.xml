@@ -1,76 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <prov:document xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://openprovenance.org/prov/extension#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ocrd="http://www.ocr-d.de">
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR2_0001</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR2</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR_0002</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR_0003</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR2_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR2_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR2_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION1_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION1_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION1_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION1_0004</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION1</prov:value>
     </prov:entity>
     <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0000">
         <prov:type xsi:type="xsd:QName">ocrd:mets</prov:type>
@@ -95,53 +41,23 @@
         <prov:type xsi:type="xsd:QName">ocrd:mets</prov:type>
         <prov:value xsi:type="xsd:string">mets.xml.1573216368804_0003</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG_0004</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-IMG</prov:value>
     </prov:entity>
     <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0004">
         <prov:type xsi:type="xsd:QName">ocrd:mets</prov:type>
         <prov:value xsi:type="xsd:string">mets.xml.1573628719426_0004</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION2_0004</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION2</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION2_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION2_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0004">
+      <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0004">
         <prov:type xsi:type="xsd:QName">ocrd:mets</prov:type>
         <prov:value xsi:type="xsd:string">mets.xml.1573216561019_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION2_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG_0001</prov:value>
     </prov:entity>
     <prov:entity prov:id="ocrd:parameterFile__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20">
         <prov:type xsi:type="xsd:QName">ocrd:parameter__file</prov:type>
@@ -171,15 +87,10 @@
         <prov:type xsi:type="xsd:QName">ocrd:mets</prov:type>
         <prov:value xsi:type="xsd:string">mets.xml.1573216561019_0001</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE2_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE2_0004</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE2</prov:value>
     </prov:entity>
     <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0002">
         <prov:type xsi:type="xsd:QName">ocrd:mets</prov:type>
@@ -200,101 +111,15 @@
         <prov:type xsi:type="xsd:QName">ocrd:mets</prov:type>
         <prov:value xsi:type="xsd:string">mets.xml.1573628719426_0001</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE2_0001</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE1</prov:value>
     </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE2_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR1_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR1_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR1_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-OCR-TESSEROCR1_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR1_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR1_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR1_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR1_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE1_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE1_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE1_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-LINE1_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR2_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION_0003</prov:value>
+    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION">
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFileGroup</prov:type>
+        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION</prov:value>
     </prov:entity>
     <prov:entity prov:id="ocrd:parameterFile__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49">
         <prov:type xsi:type="xsd:QName">ocrd:parameter__file</prov:type>
@@ -304,36 +129,6 @@
 }
 
 </prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0003">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR2_0003</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0004">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION_0004</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR2_0002</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0001">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-IMG-BIN-TESSEROCR2_0001</prov:value>
-    </prov:entity>
-    <prov:entity prov:id="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0002">
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:type xsi:type="xsd:QName">ocrd:mets__referencedFile</prov:type>
-        <prov:value xsi:type="xsd:string">OCR-D-SEG-REGION_0002</prov:value>
     </prov:entity>
     <prov:activity prov:id="ocrd:workflow__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__19">
         <prov:startTime>2019-11-13T07:05:19.426Z</prov:startTime>
@@ -443,19 +238,7 @@
     <prov:agent prov:id="ocrd:Execute__Taverna__OCR__D__Workflow"/>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
@@ -467,19 +250,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
@@ -487,19 +258,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
@@ -507,19 +266,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
@@ -531,19 +278,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
@@ -551,19 +286,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
@@ -571,19 +294,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
@@ -591,19 +302,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
@@ -611,19 +310,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
@@ -631,19 +318,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
@@ -651,19 +326,7 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
@@ -671,41 +334,14 @@
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0001"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0002"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0003"/>
-    </prov:used>
-    <prov:used>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG"/>
     </prov:used>
     <prov:used>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
         <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0000"/>
     </prov:used>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_06_40'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_06_40'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_06_40'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__49"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_06_40'</prov:role>
     </prov:wasGeneratedBy>
@@ -715,22 +351,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_06_40'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_47'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_47'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_47'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__35"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_47'</prov:role>
     </prov:wasGeneratedBy>
@@ -740,22 +361,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_47'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_34'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_34'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_34'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__26"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_34'</prov:role>
     </prov:wasGeneratedBy>
@@ -765,22 +371,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_34'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_23'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_23'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_23'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__13T07__05__20"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_23'</prov:role>
     </prov:wasGeneratedBy>
@@ -790,22 +381,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_13T07_05_23'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_37_22'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_37_22'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_37_22'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__30"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_37_22'</prov:role>
     </prov:wasGeneratedBy>
@@ -815,22 +391,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_37_22'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_29'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_29'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_29'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__16"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_29'</prov:role>
     </prov:wasGeneratedBy>
@@ -840,22 +401,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_29'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_14'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_14'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_14'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__07"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_14'</prov:role>
     </prov:wasGeneratedBy>
@@ -865,22 +411,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_14'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_04'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_04'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_04'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__36__02"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_04'</prov:role>
     </prov:wasGeneratedBy>
@@ -890,22 +421,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_36_04'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_34_05'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_34_05'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_34_05'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__17"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_34_05'</prov:role>
     </prov:wasGeneratedBy>
@@ -915,22 +431,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_34_05'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_15'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_15'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_15'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__33__03"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_15'</prov:role>
     </prov:wasGeneratedBy>
@@ -940,22 +441,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_15'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_02'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_02'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_02'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__54"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_02'</prov:role>
     </prov:wasGeneratedBy>
@@ -965,22 +451,7 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_33_02'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0001"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_32_52'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0002"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_32_52'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0003"/>
-        <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
-        <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_32_52'</prov:role>
-    </prov:wasGeneratedBy>
-    <prov:wasGeneratedBy>
-        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0004"/>
+        <prov:entity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR"/>
         <prov:activity prov:ref="ocrd:processor__http______www__deutschestextarchiv__de__wundt__grundriss__1896__2019__11__08T12__32__49"/>
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_32_52'</prov:role>
     </prov:wasGeneratedBy>
@@ -990,240 +461,96 @@
         <prov:role xsi:type="xsd:string">'ocrd:{http://www.ocr-d.de}processor_http___www_deutschestextarchiv_de_wundt_grundriss_1896_2019_11_08T12_32_52'</prov:role>
     </prov:wasGeneratedBy>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR2"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0004"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0003"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE2"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0003"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0002"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION2"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0002"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0001"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR2"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0001"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573628719426__0000"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR1"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0004"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0003"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE1"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0003"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0002"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION1"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0002"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0001"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR1"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0001"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216561019__0000"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__OCR__TESSEROCR"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0004"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0003"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__LINE"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0003"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0002"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__SEG__REGION"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0002"/>
         <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0001"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0001"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0001"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0002"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0002"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0003"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0003"/>
-    </prov:wasDerivedFrom>
-    <prov:wasDerivedFrom>
-        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR__0004"/>
-        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__0004"/>
+        <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG__BIN__TESSEROCR"/>
+        <prov:usedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__OCR__D__IMG"/>
     </prov:wasDerivedFrom>
     <prov:wasDerivedFrom>
         <prov:generatedEntity prov:ref="ocrd:http______www__deutschestextarchiv__de__wundt__grundriss__1896__mets__xml__1573216368804__0001"/>
