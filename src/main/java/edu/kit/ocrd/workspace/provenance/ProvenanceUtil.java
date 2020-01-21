@@ -98,6 +98,7 @@ public class ProvenanceUtil {
     List<ProvenanceMetadata> provenanceMetadataList = new ArrayList<>();
     ProvenanceUtil provUtil = new ProvenanceUtil(provDocument, metsDocument);
     Map<String, ProvenanceActivity> extractWorkflows = provUtil.extractActivities("ocrd:workflow");
+    LOGGER.debug("Found {} workflows in provenance document!", extractWorkflows.size());
     ProvenanceMetadata provenanceMetadata = new ProvenanceMetadata();
     for (ProvenanceActivity workflow : extractWorkflows.values()) {
       provenanceMetadata.setResourceId(resourceId);
@@ -118,9 +119,10 @@ public class ProvenanceUtil {
    * @return List with all found files.
    */
   private List<ProvenanceMetadata> extractProcessorsForWorkflow(final ProvenanceMetadata provMetadata) {
-    LOGGER.info("Extract processor metadata from METS ocrd_provenance.xml");
+    LOGGER.info("Extract processor metadata for workflow id '{}' from METS ocrd_provenance.xml", provMetadata.getWorkflowId());
     List<ProvenanceMetadata> provenanceMetadata = new ArrayList<>();
     String[] processorIds = JaxenUtil.getAttributesValues(provDocument, "//prov:wasStartedBy/prov:activity[@prov:ref='" + provMetadata.getWorkflowId() + "']/../prov:trigger/@prov:ref", namespaces);
+    LOGGER.debug("Found '{}' processor for workflow.", processorIds.length);
     for (String id : processorIds) {
       ProvenanceActivity processor = processorActivities.get(id);
       ProvenanceMetadata processorMetadata = (ProvenanceMetadata) provMetadata.clone();
@@ -128,10 +130,9 @@ public class ProvenanceUtil {
       processorMetadata.setStartProcessor(processor.getStartDate());
       processorMetadata.setDurationProcessor(getDuration(processor.getStartDate(), processor.getEndDate()));
       // Add content of parameter file if available
-      for (String parameterId : parameterFileEntities.keySet()) {
-        List parameterNodeList = JaxenUtil.getNodes(provDocument, "//prov:used[./prov:activity/@prov:ref='" + id + "' and "
-                + "./prov:entity/@prov:ref='" + parameterId + "']", namespaces);
-        if (!parameterNodeList.isEmpty()) {
+      String[] list = JaxenUtil.getAttributesValues(provDocument, "//prov:used[./prov:activity/@prov:ref='" + id + "']/prov:entity/@prov:ref", namespaces);
+      for (String parameterId : list) {
+        if (parameterFileEntities.keySet().contains(parameterId)) {
           processorMetadata.setParameterFile(parameterFileEntities.get(parameterId).getValue());
           // only one parameter file per processor.
           break;
@@ -170,7 +171,7 @@ public class ProvenanceUtil {
    * @return Map with all found activities.
    */
   private Map<String, ProvenanceActivity> extractActivities(final String type) {
-    LOGGER.info("Extract activities from METS ocrd_provenance.xml");
+    LOGGER.info("Extract activities of type '{}' from METS ocrd_provenance.xml", type);
     Map<String, ProvenanceActivity> activityList = new HashMap<>();
     List nodes = JaxenUtil.getNodes(provDocument, "//prov:type[text()='" + type + "']/../.", namespaces);
     for (Object activityNode : nodes) {
@@ -195,6 +196,7 @@ public class ProvenanceUtil {
       activity.setEndDate(endWorkflow);
       activityList.put(id, activity);
     }
+    LOGGER.debug("Found {} activities of type '{}'", activityList.size(), type);
     return activityList;
   }
 
@@ -206,7 +208,7 @@ public class ProvenanceUtil {
    * @return Map with all found entities.
    */
   private Map<String, ProvenanceEntity> extractEntities(final String type) {
-    LOGGER.info("Extract entities from METS ocrd_provenance.xml");
+    LOGGER.info("Extract entities of type '{}' from METS ocrd_provenance.xml", type);
     Map<String, ProvenanceEntity> entityList = new HashMap<>();
     List nodes = JaxenUtil.getNodes(provDocument, "//prov:type[text()='" + type + "']/../.", namespaces);
     for (Object entityNode : nodes) {
