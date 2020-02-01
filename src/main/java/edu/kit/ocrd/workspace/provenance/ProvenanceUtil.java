@@ -51,6 +51,7 @@ public class ProvenanceUtil {
   };
 
   private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
+  private static final SimpleDateFormat sdfIso = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSX");
   /**
    * Mets document.
    */
@@ -182,11 +183,21 @@ public class ProvenanceUtil {
       String label = JaxenUtil.getNodeValue(fileGrpElement, "./prov:label", namespaces);
       Date startWorkflow = null;
       Date endWorkflow = null;
+      String sTimeString = startTime.replaceAll("Z$", "+00:00");
+      String eTimeString = endTime.replaceAll("Z$", "+00:00");
       try {
-        startWorkflow = sdf.parse(startTime.replaceAll("Z$", "+0000"));
-        endWorkflow = sdf.parse(endTime.replaceAll("Z$", "+0000"));
+        // Parse ISO date  
+        startWorkflow = sdfIso.parse(sTimeString);
+        endWorkflow = sdfIso.parse(eTimeString);
       } catch (ParseException ex) {
-        LOGGER.error("Error parsing date!", ex);
+        LOGGER.debug("Error parsing date '{}'! Try RFC 822! ", ex);
+      try {
+        // if date is not ISO test for RFC 822 from old provenance library
+        startWorkflow = sdf.parse(sTimeString);
+        endWorkflow = sdf.parse(eTimeString);
+      } catch (ParseException ex2) {
+        LOGGER.error("Error parsing date!", ex2);
+      }
       }
       ProvenanceActivity activity = new ProvenanceActivity();
       activity.setId(id);
