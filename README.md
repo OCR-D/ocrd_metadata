@@ -14,14 +14,11 @@ In order to build this library you'll need:
 Build the library and make it accessible for other projects.
 ```bash=bash
 # Build library
-user@localhost:/home/user/ocrd_metadata/$./gradlew clean build install
+user@localhost:/home/user/ocrd_metadata/$./gradlew -Prelease clean build
 BUILD SUCCESSFUL in 5s
 7 actionable tasks: 7 executed
 ```
-As a result, a jar containing all the utility classes is created at 'build/libs/ocrd-metadata-0.1.0.jar'.
-
-
-
+As a result, a jar containing all the utility classes is created at 'build/libs/ocrd-metadata-0.4.0.jar'.
 
 
 ## More Information
